@@ -1,0 +1,175 @@
+/* CSS using SCSS
+        Created By: Don Page on 10/19/14
+        Don.page.work@gmail.com
+        @DonRPage
+  */
+
+/*
+ * Media Queries
+ */
+
+@media only screen and (max-width: 1135px){
+  .blog-wrapper{
+    div.article-wrapper{
+      a{
+        article{
+          margin: 24px 3px;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .article-outer-wrapper{
+    .article-inner-wrapper{
+      .article-type{
+
+      }
+      .article-info-block{
+        width: 25.5%;
+        a.top{
+          .profile-image{
+
+          }
+          .profile-info{
+            float: right;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-wrapper{
+    div.article-wrapper{
+      a{
+        article{
+          width: 100%;
+          margin: 20px 0;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .article-outer-wrapper{
+    .article-inner-wrapper{
+      .article-type{
+
+      }
+      .article-info-block{
+        float: none;
+        width: 100%;
+        position: relative;
+        a.top{
+          width: initial;
+          float: left;
+          height: 5.3em;
+          .profile-image{
+
+          }
+          .profile-info{
+
+          }
+        }
+        .tags{
+          border-top: none;
+          border-left: 1px solid rgba(14, 14, 14, 0.20);
+          height: 5em;
+          width: initial;
+          overflow-y: auto;
+        }
+      }
+      .article-text-block{
+        width: 100%;
+        top: -2px;
+      }
+    }
+
+  }
+
+  #back2top{
+    right:30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav ul li{
+    font-size: 0.76em;
+    top: 10px;
+    width: calc(97% / 3);
+    &:nth-child(2){
+  /*    border-left: 1px solid white;
+      border-right: 1px solid white;*/ //leaving out for now.
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .article-outer-wrapper{
+    .article-inner-wrapper{
+      padding: 18px 0;
+      .article-text-block{
+        h1, h2, h3, h4, h5, p, pre {
+          padding: 3px 40px;
+        }
+      }
+    }
+  }
+  #back2top{
+    right: 0;
+  }
+
+  .blog-wrapper{
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    div.article-wrapper{
+      a{
+        article{
+          width: 100%;
+          margin: 20px 0;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .article-outer-wrapper{
+    .article-inner-wrapper{
+      padding: 18px 0;
+      .article-text-block{
+        h1, h2, h3, h4, h5, p, pre {
+          padding: 3px 40px 3px 10px;
+        }
+      }
+    }
+  }
+  #back2top{
+    right: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 

@@ -1,0 +1,237 @@
+<div id="view-page" class="closed">
+    <div class="article-outer-wrapper">
+        <div class="article-inner-wrapper">
+            <div class="article-type" style="background-color: {{typeColor}}">
+                {{articleType}}
+
+            </div>
+            <div class="article-info-block">
+                <a href="#{{authorInfo.name}}" class="top">
+                    <p>Author:</p>
+
+                    <div class="profile-image" style="background-image: url('{{authorInfo.avatar}}') !important;">
+
+                    </div>
+                    <div class="profile-info">
+                        <p class="name">{{authorInfo.name}}</p>
+                        <p class="title">{{authorInfo.title}}</p>
+                    </div>
+
+                </a>
+                <div class="tags">
+                    <p>Tags</p>
+                    <ul>
+                        <li ng-repeat="tags in articleTags track by $index"> {{tags}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="article-text-block">
+
+                <div class="image-wrapper">
+                    <img ng-src="{{articleImg}}">
+                </div>
+                <p class="date">December 11, 2014</p>
+
+                <h1 class="title">{{articleTitle}}</h1>
+
+
+                <p>Lorem <a href="#">Link</a> <b>Bold Text</b> dolor sit amet, consectetur adipiscing elit. Mauris a
+                    erat
+                    hendrerit, imperdiet purus quis, cursus velit. Praesent sapien augue, fringilla at pulvinar ac,
+                    dapibus
+                    eget
+                    lacus. Donec commodo pellentesque nibh, sollicitudin viverra nulla pharetra tristique. Vivamus
+                    commodo
+                    tellus mattis arcu viverra, ut venenatis mauris pharetra. Nulla nulla sapien, elementum elementum
+                    malesuada
+                    id, vehicula eget nisi. Nam quis massa elementum ligula sodales luctus at et neque. Sed vulputate
+                    fermentum
+                    varius. Etiam laoreet mi nulla, tempus fermentum orci viverra id. Mauris tempor efficitur magna at
+                    molestie.
+                    Nunc placerat ultrices ligula sit amet pulvinar. Nam sed tempor tellus.
+
+                    Mauris pellentesque condimentum euismod. Integer et tempor nibh. Ut dolor quam, suscipit vel auctor
+                    quis,
+                    dictum sed justo. Curabitur pharetra at mi sed sollicitudin. Curabitur faucibus condimentum sem nec
+                    molestie. Sed tincidunt in justo in elementum. Duis feugiat augue suscipit, aliquet lorem quis,
+                    laoreet
+                    elit.
+
+                    Nulla aliquet et urna id euismod. Vivamus ornare lacus venenatis, congue arcu at, semper ex.
+                    Maecenas
+                    lobortis, velit vitae pellentesque faucibus, nibh massa aliquet libero, eu pharetra nibh nunc in
+                    ipsum.
+                    Maecenas quis ante placerat, consequat eros ut, dapibus ex. Praesent vitae ex ac felis semper
+                    iaculis.
+                    Nulla
+                    faucibus id lorem eu laoreet. Vestibulum viverra tempus eros id iaculis. Sed neque sapien, malesuada
+                    eu
+                    hendrerit vel, aliquet ut massa. Donec feugiat orci arcu, sit amet porttitor orci finibus ac. Class
+                    aptent
+                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis euismod arcu.
+                    Aenean
+                    rhoncus turpis non lectus volutpat efficitur. Proin faucibus quam eget tincidunt luctus. Proin sit
+                    amet
+                    arcu
+                    nunc. Aliquam nec consectetur lacus. Phasellus elementum commodo neque, quis mollis lectus tincidunt
+                    in.
+                </p>
+                            <pre><code class="language-js">
+                                $(window).scroll(function (e) {
+                                if ($("#navBar").hasClass("open")) {
+                                if ($(this).scrollTop() < 80) {
+                                $("#small-logo").removeClass("show").fadeOut('slow');
+                                $("#navBar").css({position: "absolute", top: 80});
+                                } else {
+                                $("#small-logo").addClass("show").fadeIn('slow');
+                                $('#navBar').css({position: "fixed", top: 0});
+                                }
+                                }
+                                });
+                            </code></pre>
+
+                <p>Lorem <a href="#">Link</a> <b>Bold Text</b> dolor sit amet, consectetur adipiscing elit. Mauris a
+                    erat
+                    hendrerit, imperdiet purus quis, cursus velit. Praesent sapien augue, fringilla at pulvinar ac,
+                    dapibus
+                    eget
+                    lacus. Donec commodo pellentesque nibh, sollicitudin viverra nulla pharetra tristique. Vivamus
+                    commodo
+                    tellus mattis arcu viverra, ut venenatis mauris pharetra. Nulla nulla sapien, elementum elementum
+                    malesuada
+                    id, vehicula eget nisi. Nam quis massa elementum ligula sodales luctus at et neque. Sed vulputate
+                    fermentum
+                    varius. Etiam laoreet mi nulla, tempus fermentum orci viverra id. Mauris tempor efficitur magna at
+                    molestie.
+                    Nunc placerat ultrices ligula sit amet pulvinar. Nam sed tempor tellus.
+
+                    Mauris pellentesque condimentum euismod. Integer et tempor nibh. Ut dolor quam, suscipit vel auctor
+                    quis,
+                    dictum sed justo. Curabitur pharetra at mi sed sollicitudin. Curabitur faucibus condimentum sem nec
+                    molestie. Sed tincidunt in justo in elementum. Duis feugiat augue suscipit, aliquet lorem quis,
+                    laoreet
+                    elit.
+
+                    Nulla aliquet et urna id euismod. Vivamus ornare lacus venenatis, congue arcu at, semper ex.
+                    Maecenas
+                    lobortis, velit vitae pellentesque faucibus, nibh massa aliquet libero, eu pharetra nibh nunc in
+                    ipsum.
+                    Maecenas quis ante placerat, consequat eros ut, dapibus ex. Praesent vitae ex ac felis semper
+                    iaculis.
+                    Nulla
+                    faucibus id lorem eu laoreet. Vestibulum viverra tempus eros id iaculis. Sed neque sapien, malesuada
+                    eu
+                    hendrerit vel, aliquet ut massa. Donec feugiat orci arcu, sit amet porttitor orci finibus ac. Class
+                    aptent
+                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis euismod arcu.
+                    Aenean
+                    rhoncus turpis non lectus volutpat efficitur. Proin faucibus quam eget tincidunt luctus. Proin sit
+                    amet
+                    arcu
+                    nunc. Aliquam nec consectetur lacus. Phasellus elementum commodo neque, quis mollis lectus tincidunt
+                    in.
+                </p>
+
+                <p>Lorem <a href="#">Link</a> <b>Bold Text</b> dolor sit amet, consectetur adipiscing elit. Mauris a
+                    erat
+                    hendrerit, imperdiet purus quis, cursus velit. Praesent sapien augue, fringilla at pulvinar ac,
+                    dapibus
+                    eget
+                    lacus. Donec commodo pellentesque nibh, sollicitudin viverra nulla pharetra tristique. Vivamus
+                    commodo
+                    tellus mattis arcu viverra, ut venenatis mauris pharetra. Nulla nulla sapien, elementum elementum
+                    malesuada
+                    id, vehicula eget nisi. Nam quis massa elementum ligula sodales luctus at et neque. Sed vulputate
+                    fermentum
+                    varius. Etiam laoreet mi nulla, tempus fermentum orci viverra id. Mauris tempor efficitur magna at
+                    molestie.
+                    Nunc placerat ultrices ligula sit amet pulvinar. Nam sed tempor tellus.
+
+                    Mauris pellentesque condimentum euismod. Integer et tempor nibh. Ut dolor quam, suscipit vel auctor
+                    quis,
+                    dictum sed justo. Curabitur pharetra at mi sed sollicitudin. Curabitur faucibus condimentum sem nec
+                    molestie. Sed tincidunt in justo in elementum. Duis feugiat augue suscipit, aliquet lorem quis,
+                    laoreet
+                    elit.
+
+                    Nulla aliquet et urna id euismod. Vivamus ornare lacus venenatis, congue arcu at, semper ex.
+                    Maecenas
+                    lobortis, velit vitae pellentesque faucibus, nibh massa aliquet libero, eu pharetra nibh nunc in
+                    ipsum.
+                    Maecenas quis ante placerat, consequat eros ut, dapibus ex. Praesent vitae ex ac felis semper
+                    iaculis.
+                    Nulla
+                    faucibus id lorem eu laoreet. Vestibulum viverra tempus eros id iaculis. Sed neque sapien, malesuada
+                    eu
+                    hendrerit vel, aliquet ut massa. Donec feugiat orci arcu, sit amet porttitor orci finibus ac. Class
+                    aptent
+                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis euismod arcu.
+                    Aenean
+                    rhoncus turpis non lectus volutpat efficitur. Proin faucibus quam eget tincidunt luctus. Proin sit
+                    amet
+                    arcu
+                    nunc. Aliquam nec consectetur lacus. Phasellus elementum commodo neque, quis mollis lectus tincidunt
+                    in.
+                </p>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="back2top">
+    <div class="arrow-up"></div>
+</div>
+<footer>
+    <div class="elements-wrapper">
+        <a id="twitter" class="element">
+            <p class="e-id">23</p>
+
+            <h2 class="e-name">t</h2>
+
+            <p class="e-fname">Twitter</p>
+
+            <p class="e-anumber">127.00</p>
+        </a>
+        <a id="github" class="element">
+            <p class="e-id">9</p>
+
+            <h2 class="e-name">g</h2>
+
+            <p class="e-fname">Github</p>
+
+            <p class="e-anumber">91.23</p>
+        </a>
+        <a id="codepen" class="element">
+            <p class="e-id">20</p>
+
+            <h2 class="e-name">c</h2>
+
+            <p class="e-fname">Codepen</p>
+
+            <p class="e-anumber">24.03</p>
+        </a>
+        <a id="facebook" class="element">
+            <p class="e-id">24</p>
+
+            <h2 class="e-name">f</h2>
+
+            <p class="e-fname">Facebook</p>
+
+            <p class="e-anumber">51.9961</p>
+        </a>
+        <a id="dribble" class="element">
+            <p class="e-id">57</p>
+
+            <h2 class="e-name">d</h2>
+
+            <p class="e-fname">Dribbble</p>
+
+            <p class="e-anumber">23.7</p>
+        </a>
+    </div>
+    <h5>© 2014 DON PAGE</h5>
+</footer>
