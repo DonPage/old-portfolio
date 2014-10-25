@@ -1,4 +1,18 @@
-# webstorm stores its data in .idea/workspace.xml
+# Created on friday, october 24
 
 
+## Directory-based project format
 .idea/workspace.xml
+.idea/tasks.xml
+# and these sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+
+## File-based project format
+*.ipr
+*.iml
+*.iws
+
+
