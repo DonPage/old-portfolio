@@ -403,10 +403,10 @@ angular.module("donSite")
         };
 
         //find what article should be open.
-        this.getCurrentArticle = function(id){
-            for (var i = 0; i < articleArray.length; i++){
-                if (articleArray[i].ID == id){
-                    currentArticle = articleArray[i];
+        this.getCurrentArticle = function(id, page){
+            for (var i = 0; i < articleArray[page - 1].length; i++){
+                if (articleArray[page - 1][i].ID == id){
+                    currentArticle = articleArray[page - 1][i];
                     console.log('FOUND MATCH', articleArray[i]);
                     break; //the break is so the loop doesnt keep running after a match is found.
                 }else{

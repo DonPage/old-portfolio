@@ -13,7 +13,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 controller: "blogController",
                 templateUrl: "parts/blog.html"
             })
-            .when("/blog/:articleID", {
+            .when("/blog/:pageNumber/:articleID", {
                 controller: "articleController",
                 templateUrl: function($routeParams){
                     //depending on the articleID ($routeParam), this function will dynamically load the correct html page.
@@ -51,6 +51,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
         $scope.pageArray  = siteService.getArticlePages();
         $scope.articleArray = siteService.getArticleArray($routeParams.pageNumber);
+        $scope.pageNum = $routeParams.pageNumber;
 
 
     })
@@ -59,7 +60,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         var currentArticle = null;
         var pageHeight = $(window).height();
 
-        siteService.getCurrentArticle($routeParams.articleID);
+        siteService.getCurrentArticle($routeParams.articleID, $routeParams.pageNumber);
 
         siteService.openPage();
         siteService.loadSH();

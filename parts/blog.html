@@ -7,7 +7,7 @@
         </form>
         <!--{{searchQ}}-->
         <div class="article-wrapper" ng-repeat="article in articleArray | filter:searchQ">
-            <a ng-href="#blog/{{article.ID}}">
+            <a ng-href="#blog/{{pageNum}}/{{article.ID}}">
                 <!-- background-image is being injected from angular articleArray -->
                 <article style="background-image: url({{article.img}})">
                     <div class="b-title" style="border-left: solid {{article.typeColor}} 4px;">{{article.title}}</div>
