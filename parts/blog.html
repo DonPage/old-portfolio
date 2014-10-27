@@ -23,6 +23,12 @@
 
         </div>
 
+        <div class="pageNumWrapper">
+            <div ng-repeat="page in pageArray track by $index">
+                <a href="#blog/{{$index + 1}}">{{$index + 1}}</a>
+            </div>
+        </div>
+
     </div>
 </div>
 <footer>

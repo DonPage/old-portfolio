@@ -9,7 +9,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 controller: "egoController",
                 templateUrl: "parts/ego.html"
             })
-            .when("/blog", {
+            .when("/blog/:pageNumber", {
                 controller: "blogController",
                 templateUrl: "parts/blog.html"
             })
@@ -46,10 +46,11 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
     })
 
-    .controller("blogController", function ($scope, siteService) {
+    .controller("blogController", function ($scope, siteService, $routeParams) {
         siteService.openPage();
 
-        $scope.articleArray = siteService.getArticleArray();
+        $scope.pageArray  = siteService.getArticlePages();
+        $scope.articleArray = siteService.getArticleArray($routeParams.pageNumber);
 
 
     })

@@ -246,7 +246,9 @@ angular.module("donSite")
          * Open Source: #ff6666
          * Angular: #70c989
          */
+
         var articleArray = [
+            [
             {
                 ID: "MEGAvsDropbox",
                 img: "https://lh6.ggpht.com/Gws2S5Xxlwoxvl2Ho_R1nu49VprWOGtqIFuC5ZNRM8osf3-mbNq72YNxgkmkoaGx916n1a05ew39w7nLsOLl4-4=s852",
@@ -279,9 +281,49 @@ angular.module("donSite")
                 author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
 
             }
+            ],
+            [
+                {
+                    ID: "MEGAvsDropboxpage1",
+                    img: "https://lh6.ggpht.com/Gws2S5Xxlwoxvl2Ho_R1nu49VprWOGtqIFuC5ZNRM8osf3-mbNq72YNxgkmkoaGx916n1a05ew39w7nLsOLl4-4=s852",
+                    title: "page2",
+                    typeImg: "",
+                    type: "Review",
+                    typeColor: "#83b1ff",
+                    tags: ["Software", "Blog"],
+                    author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+                },
+                {
+                    ID: "test2",
+                    img: "http://i.imgur.com/eX9ytrN.jpg?1",
+                    title: "Test Title2",
+                    typeImg: "",
+                    type: "Case Study",
+                    typeColor: "#DB5643",
+                    tags: ["Test1"],
+                    author: [{name: "James Joe", title: "Web Designer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+
+                },
+                {
+                    ID: "AngularTest",
+                    img: "http://i.imgur.com/XHm9Rs1.png",
+                    title: "Angular Labs2",
+                    typeImg: "",
+                    type: "Angular",
+                    typeColor: "#70c989",
+                    tags: ["Angular", "something"],
+                    author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+
+                }
+            ]
         ];
 
-        this.getArticleArray = function(){
+        this.getArticleArray = function(pageNum){
+            return articleArray[pageNum - 1]; //-1 because array begins in 0 but page number counts from 1.
+        }
+
+        this.getArticlePages = function(){
+            console.log(articleArray);
             return articleArray;
         }
 
