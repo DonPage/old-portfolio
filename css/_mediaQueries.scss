@@ -10,12 +10,14 @@
 
 @media only screen and (max-width: 1135px){
   .blog-wrapper{
+    div.nofilter-wrapper{
     div.article-wrapper{
       a{
         article{
           margin: 24px 3px;
         }
       }
+    }
     }
 
   }
@@ -43,6 +45,7 @@
   }
 
   .blog-wrapper{
+    div.nofilter-wrapper{
     div.article-wrapper{
       a{
         article{
@@ -50,6 +53,7 @@
           margin: 20px 0;
         }
       }
+    }
     }
 
   }
@@ -130,6 +134,7 @@
     margin-left: 0;
     left: 0;
     width: 100%;
+    div.nofilter-wrapper{
     div.article-wrapper{
       a{
         article{
@@ -137,6 +142,7 @@
           margin: 20px 0;
         }
       }
+    }
     }
 
   }

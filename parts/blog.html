@@ -3,10 +3,13 @@
     <div class="blog-wrapper clear">
 
         <form class="search-wrapper">
-            <input ng-model="searchQ" type="search" placeholder="Search by Author, Title or Type" autofocus>
+            <input id="search-field" ng-model="searchQ" type="search" placeholder="Search by Author, Title or Type" autofocus>
         </form>
         <!--{{searchQ}}-->
-        <div class="article-wrapper" ng-repeat="article in articleArray | filter:searchQ">
+        <div ng-switch on="(searchQ.length >= 1)">
+        <div ng-switch-default class="nofilter-wrapper">
+        <div class="article-wrapper" ng-repeat="article in articleArray track by $index" >
+
             <a ng-href="#blog/{{pageNum}}/{{article.ID}}">
                 <!-- background-image is being injected from angular articleArray -->
                 <article style="background-image: url({{article.img}})">
@@ -20,7 +23,25 @@
                     </div>
                 </article>
             </a>
+        </div>
+        </div>
+            <div ng-switch-when="true" class="nofilter-wrapper">
+            <div class="article-wrapper" ng-repeat="articleQ in articleShadowArray | filter:searchQ">
+                <a ng-href="#blog/{{pageNum}}/{{articleQ.ID}}">
+                    <!-- background-image is being injected from angular articleArray -->
+                    <article style="background-image: url({{articleQ.img}})">
+                        <div class="b-title" style="border-left: solid {{articleQ.typeColor}} 4px;">{{articleQ.title}}</div>
+                        <div class="b-picture">
 
+                        </div>
+                        <div class="b-desc">
+                            <span class="type-logo">{{articleQ.type}}</span>
+                            <span class="type-author">{{articleQ.author[0].name}}</span>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            </div>
         </div>
 
         <div class="pageNumWrapper">

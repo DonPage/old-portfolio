@@ -490,7 +490,7 @@ footer {
     content: "";
     display: table;
     clear: both; }
-  .blog-wrapper div.article-wrapper a article {
+  .blog-wrapper div.nofilter-wrapper div.article-wrapper a article {
     color: white;
     cursor: pointer;
     float: left;
@@ -502,12 +502,12 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
-    .blog-wrapper div.article-wrapper a article:hover .b-picture {
+    .blog-wrapper div.nofilter-wrapper div.article-wrapper a article:hover .b-picture {
       -webkit-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       -moz-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       background: rgba(255, 255, 255, 0.11); }
-    .blog-wrapper div.article-wrapper a article .b-picture {
+    .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-picture {
       -webkit-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       -moz-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -517,7 +517,7 @@ footer {
       width: 100%;
       height: 330px;
       position: absolute; }
-    .blog-wrapper div.article-wrapper a article .b-title {
+    .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-title {
       height: 40px;
       font-size: 20px;
       line-height: 2;
@@ -528,7 +528,7 @@ footer {
       z-index: 200;
       background: rgba(39, 39, 55, 0.97);
       padding: 0 30px; }
-    .blog-wrapper div.article-wrapper a article .b-desc {
+    .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc {
       line-height: 2.9;
       padding: 0 2px;
       width: calc(100% - 3px);
@@ -537,13 +537,13 @@ footer {
       position: absolute;
       bottom: 0;
       z-index: 200; }
-      .blog-wrapper div.article-wrapper a article .b-desc span {
+      .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc span {
         width: 48%;
         height: 100%; }
-      .blog-wrapper div.article-wrapper a article .b-desc span.type-logo {
+      .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc span.type-logo {
         margin-left: 8px;
         float: left; }
-      .blog-wrapper div.article-wrapper a article .b-desc span.type-author {
+      .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc span.type-author {
         margin-right: 8px;
         float: right;
         text-align: right; }
@@ -732,7 +732,7 @@ footer {
  * Media Queries
  */
 @media only screen and (max-width: 1135px) {
-  .blog-wrapper div.article-wrapper a article {
+  .blog-wrapper div.nofilter-wrapper div.article-wrapper a article {
     margin: 24px 3px; } }
 @media only screen and (max-width: 950px) {
   .article-outer-wrapper .article-inner-wrapper .article-info-block {
@@ -741,7 +741,7 @@ footer {
       float: right;
       padding: 5px 10px; }
 
-  .blog-wrapper div.article-wrapper a article {
+  .blog-wrapper div.nofilter-wrapper div.article-wrapper a article {
     width: 100%;
     margin: 20px 0; } }
 @media only screen and (max-width: 850px) {
@@ -786,7 +786,7 @@ footer {
     margin-left: 0;
     left: 0;
     width: 100%; }
-    .blog-wrapper div.article-wrapper a article {
+    .blog-wrapper div.nofilter-wrapper div.article-wrapper a article {
       width: 100%;
       margin: 20px 0; } }
 @media only screen and (max-width: 500px) {

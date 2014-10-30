@@ -623,6 +623,7 @@ footer {
   left: -12px;
   @include clearfix;
   height: 100%;
+  div.nofilter-wrapper{
   div.article-wrapper {
     a {
       article {
@@ -694,6 +695,7 @@ footer {
         }
       }
     }
+  }
   }
 }
 

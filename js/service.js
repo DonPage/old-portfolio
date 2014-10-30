@@ -3,6 +3,8 @@ angular.module("donSite")
 
         var currentPage = document.location.hash;
         var currentArticle = null;
+        var shadowArticleArray = [];
+
 
         var skillsArray = [
             [
@@ -318,9 +320,23 @@ angular.module("donSite")
             ]
         ];
 
+
         this.getArticleArray = function(pageNum){
+            console.log('getArticleArray:', articleArray[pageNum - 1]);
             return articleArray[pageNum - 1]; //-1 because array begins in 0 but page number counts from 1.
         }
+
+        this.populateShadowArray = function(){
+            console.log('populateShadowArray from', articleArray);
+            for (var i=0; i < articleArray.length; i++){ //wemustgodeeper.jpg
+                for (var y=0; y < articleArray[i].length; y++){
+                    console.log('pushing', articleArray[i][y]);
+                    shadowArticleArray.push(articleArray[i][y]);
+                }
+            }
+        };
+
+
 
         this.getArticlePages = function(){
             console.log(articleArray);
@@ -401,6 +417,11 @@ angular.module("donSite")
             console.log('GETTING ARTICLE');
             document.location.hash = "/blog/"+id;
         };
+
+        this.getShadowArray = function(){
+            console.log('SHADOW:', shadowArticleArray);
+            return shadowArticleArray;
+        }
 
         //find what article should be open.
         this.getCurrentArticle = function(id, page){

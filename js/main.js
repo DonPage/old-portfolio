@@ -48,12 +48,12 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
     .controller("blogController", function ($scope, siteService, $routeParams) {
         siteService.openPage();
+        siteService.populateShadowArray();
 
         $scope.pageArray  = siteService.getArticlePages();
         $scope.articleArray = siteService.getArticleArray($routeParams.pageNumber);
         $scope.pageNum = $routeParams.pageNumber;
-
-
+        $scope.articleShadowArray = siteService.getShadowArray();
     })
 
     .controller("articleController", function($scope, siteService, $routeParams) {
@@ -74,3 +74,18 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         $scope.authorInfo = article.author[0];
 
     })
+
+//    .filter("blogFilter", function(siteService, $routeParams){
+//        var searchField = document.querySelector('#search-field');
+//        console.log('searchField',searchField.value);
+//        return function (items, name) {
+//            console.log('INPUT',name);
+//            if (name == '' || name == undefined){
+//                return siteService.getArticleArray($routeParams.pageNumber);
+//
+//            } else {
+//                return siteService.getShadowArray();
+//            }
+//        };
+//
+//    });
