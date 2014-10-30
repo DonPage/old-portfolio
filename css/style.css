@@ -693,6 +693,36 @@ footer {
     font-size: 1.323em;
     color: #272737; }
 
+/*
+ * Page Number Wrapper
+ */
+.pageNumWrapper {
+  border-top: 1px solid rgba(14, 14, 14, 0.2);
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 4em;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center; }
+  .pageNumWrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .pageNumWrapper .pageNumber {
+    border: 1px solid rgba(14, 14, 14, 0.2);
+    border-radius: 4px;
+    display: inline;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 0 5px;
+    position: relative;
+    top: 20px; }
+    .pageNumWrapper .pageNumber a {
+      border-bottom: none;
+      line-height: 3.5; }
+
 /* CSS using SCSS
         Created By: Don Page on 10/19/14
         Don.page.work@gmail.com

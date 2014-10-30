@@ -24,8 +24,8 @@
         </div>
 
         <div class="pageNumWrapper">
-            <div ng-repeat="page in pageArray track by $index">
-                <a href="#blog/{{$index + 1}}">{{$index + 1}}</a>
+            <div class="pageNumber" ng-repeat="page in pageArray track by $index">
+                <a class="fill" href="#blog/{{$index + 1}}">{{$index + 1}}</a>
             </div>
         </div>
 
