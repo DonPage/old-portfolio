@@ -327,6 +327,7 @@ angular.module("donSite")
         }
 
         this.populateShadowArray = function(){
+            shadowArticleArray = []; //future me will redo the logic that fills up the shadow array so it only happens once.
             console.log('populateShadowArray from', articleArray);
             for (var i=0; i < articleArray.length; i++){ //wemustgodeeper.jpg
                 for (var y=0; y < articleArray[i].length; y++){
