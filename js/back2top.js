@@ -1,5 +1,6 @@
 /**
  * Created by donpage on 10/10/14.
+ * this is what makes the back2top tab show, doesnt hold the click event
  */
 var pageHeight = $(window).height();
 var stopPoint = pageHeight - 8;
@@ -14,4 +15,6 @@ $(window).scroll(function (e) {
         }
     }
 });
+
+
 

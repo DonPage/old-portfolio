@@ -73,6 +73,19 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         $scope.articleImg = article.img;
         $scope.authorInfo = article.author[0];
 
+        $("#back2top").on('click', function(){
+            console.log('back2top');
+            $('html, body').animate(
+                { scrollTop: 0 },
+                { duration: 300,
+                    easing: 'linear'
+                }
+            )
+        });
+
+
+
+
     })
 
 //    .filter("blogFilter", function(siteService, $routeParams){

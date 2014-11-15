@@ -441,15 +441,7 @@ angular.module("donSite")
             return currentArticle;
         };
 
-        $("#back2top").on('click', function(){
-            console.log('back2top');
-            $('html, body').animate(
-                { scrollTop: 0 },
-                { duration: 300,
-                  easing: 'linear'
-                }
-            )
-        });
+
 
         $(".overlay").on('click', function(){
             document.location.hash = 'goingHome';
