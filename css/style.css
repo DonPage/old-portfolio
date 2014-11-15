@@ -73,7 +73,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.5;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: scroll; }
 
 a {
   color: black;
@@ -763,7 +763,10 @@ footer {
     top: -2px; }
 
   #back2top {
-    right: 30px; } }
+    right: 30px; }
+
+  .elements-wrapper {
+    display: none; } }
 @media only screen and (max-width: 750px) {
   nav ul li {
     font-size: 0.76em;
