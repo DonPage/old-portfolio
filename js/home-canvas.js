@@ -148,14 +148,14 @@ function generateSprite() {
 
 function onDocumentTouchMove(event) {
 
-    if (event.touches.length == 1) {
-
-        event.preventDefault();
-
-        mouseX = event.touches[ 0 ].pageX - windowHalfX;
-        mouseY = event.touches[ 0 ].pageY - windowHalfY;
-
-    }
+//    if (event.touches.length == 1) {
+//
+//        event.preventDefault();
+//
+//        mouseX = event.touches[ 0 ].pageX - windowHalfX;
+//        mouseY = event.touches[ 0 ].pageY - windowHalfY;
+//
+//    }
 
 }
 
