@@ -148,6 +148,7 @@ function generateSprite() {
 
 function onDocumentTouchMove(event) {
 
+//disabled for mobile usage.
 //    if (event.touches.length == 1) {
 //
 //        event.preventDefault();
