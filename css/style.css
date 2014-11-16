@@ -794,8 +794,14 @@ footer {
 @media only screen and (max-width: 500px) {
   .article-outer-wrapper .article-inner-wrapper {
     padding: 18px 0; }
-    .article-outer-wrapper .article-inner-wrapper .article-text-block h1, .article-outer-wrapper .article-inner-wrapper .article-text-block h2, .article-outer-wrapper .article-inner-wrapper .article-text-block h3, .article-outer-wrapper .article-inner-wrapper .article-text-block h4, .article-outer-wrapper .article-inner-wrapper .article-text-block h5, .article-outer-wrapper .article-inner-wrapper .article-text-block p, .article-outer-wrapper .article-inner-wrapper .article-text-block pre {
+    .article-outer-wrapper .article-inner-wrapper .article-text-block p, .article-outer-wrapper .article-inner-wrapper .article-text-block pre {
+      padding: 1px 40px 3px 10px; }
+    .article-outer-wrapper .article-inner-wrapper .article-text-block h1, .article-outer-wrapper .article-inner-wrapper .article-text-block h2, .article-outer-wrapper .article-inner-wrapper .article-text-block h3, .article-outer-wrapper .article-inner-wrapper .article-text-block h4, .article-outer-wrapper .article-inner-wrapper .article-text-block h5 {
       padding: 3px 40px 3px 10px; }
 
   #back2top {
-    right: 0; } }
+    right: 0; }
+
+  #view-page > div > div:nth-child(2) > div > div:nth-child(1) > a > article > div.b-desc > span.type-author.ng-binding {
+    float: none;
+    margin-right: 0; } }
