@@ -795,7 +795,7 @@ footer {
   .article-outer-wrapper .article-inner-wrapper {
     padding: 18px 0; }
     .article-outer-wrapper .article-inner-wrapper .article-text-block p, .article-outer-wrapper .article-inner-wrapper .article-text-block pre {
-      padding: 1px 40px 3px 10px; }
+      padding: 3px 40px 3px 3.5px; }
     .article-outer-wrapper .article-inner-wrapper .article-text-block h1, .article-outer-wrapper .article-inner-wrapper .article-text-block h2, .article-outer-wrapper .article-inner-wrapper .article-text-block h3, .article-outer-wrapper .article-inner-wrapper .article-text-block h4, .article-outer-wrapper .article-inner-wrapper .article-text-block h5 {
       padding: 3px 40px 3px 10px; }
 
