@@ -170,9 +170,12 @@
   #back2top{
     right: 0;
   }
-  #view-page > div > div:nth-child(2) > div > div:nth-child(1) > a > article > div.b-desc > span.type-author.ng-binding{
+  .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc span.type-author{
     float: none;
     margin-right: 0;
+  }
+  .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc span{
+    width: 22%;
   }
 }
 
