@@ -169,7 +169,7 @@ angular.module("donSite")
                 {
                     skillName: "Terminal",
                     skillDesc: "Nerd!",
-                    skillImg: "black"
+                    skillImg: "url('#terminal-patt');"
                 },
                 {
                     skillName: "HandleBars",

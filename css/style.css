@@ -337,6 +337,14 @@ footer {
  * Skills
  * based off of Hexagon grid by Mohammed Fahsi: http://codepen.io/the-mo/pen/IEhbu
  */
+#Layer_1 {
+  width: 86px;
+  height: 89px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  fill: rgba(255, 0, 0, 0.1); }
+
 .hex-grid {
   position: relative;
   -webkit-transition: all 0.3s ease-out;
@@ -430,7 +438,7 @@ footer {
         display: block;
         position: absolute;
         top: 0;
-        left: -80px;
+        left: -60px;
         text-align: center;
         width: 200px;
         opacity: 0;
@@ -452,25 +460,6 @@ footer {
         .hex-grid .honeycomb a.hex .content small {
           display: block;
           font: 15px/1.1 verdana, sans-serif; }
-
-.hexagon {
-  display: block;
-  position: absolute;
-  width: 36px;
-  height: 62px;
-  background-color: #272737; }
-  .hexagon:before, .hexagon:after {
-    content: "";
-    position: relative;
-    float: left;
-    border-top: 31px solid transparent;
-    border-bottom: 31px solid transparent; }
-  .hexagon:before {
-    border-right: 18px solid #272737;
-    left: -17.3px; }
-  .hexagon:after {
-    border-left: 18px solid #272737;
-    right: -18px; }
 
 .hidden {
   display: none; }

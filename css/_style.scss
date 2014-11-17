@@ -484,6 +484,15 @@ footer {
  * based off of Hexagon grid by Mohammed Fahsi: http://codepen.io/the-mo/pen/IEhbu
  */
 
+#Layer_1 {
+  width: 86px;
+  height: 89px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size:cover;
+  fill: rgba(255, 0, 0, 0.1);
+}
+
 .hex-grid {
   position: relative;
   @include transition(all .3s ease-out);
@@ -557,7 +566,7 @@ footer {
         display: block;
         position: absolute;
         top: 0;
-        left: -80px;
+        left: -60px; //text-alignment
         text-align: center;
         width: 200px;
         opacity: 0;
@@ -581,29 +590,7 @@ footer {
   }
 }
 
-.hexagon {
-  display: block;
-  position: absolute;
-  width: 36px;
-  height: 62px;
-  background-color: $color-primary;
-  &:before,
-  &:after {
-    content: "";
-    position: relative;
-    float: left;
-    border-top: 31px solid transparent;
-    border-bottom: 31px solid transparent;
-  }
-  &:before {
-    border-right: 18px solid $color-primary;
-    left: -17.3px;
-  }
-  &:after {
-    border-left: 18px solid $color-primary;
-    right: -18px;
-  }
-}
+
 
 .hidden {
   display: none;
