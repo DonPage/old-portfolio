@@ -116,9 +116,9 @@ angular.module("donSite")
                 //column 5
 
                 {
-                    skillName: "",
-                    skillDesc: "",
-                    skillImg: "#nothing-patt"
+                    skillName: "WebStorm",
+                    skillDesc: "Underrated IDE for javascript",
+                    skillImg: "#ws-patt"
                 },
                 {
                     skillName: "HTML5",
