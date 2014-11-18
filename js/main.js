@@ -88,7 +88,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
 
 
-    })
+    });
 
 //    .filter("blogFilter", function(siteService, $routeParams){
 //        var searchField = document.querySelector('#search-field');

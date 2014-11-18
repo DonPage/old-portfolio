@@ -482,8 +482,9 @@ nav.open {
 
 
 /*
- * Skills
+ * Skills/hex-grid
  * based off of Hexagon grid by Mohammed Fahsi: http://codepen.io/the-mo/pen/IEhbu
+ * Instead of using :before & :after to make hexagons, I used SVG's.
  */
 
 
@@ -497,6 +498,7 @@ nav.open {
 }
 
 .hex-grid {
+  top: -50px; //this is so it's closer to the rest of the content.
   position: relative;
   @include transition(all .3s ease-out);
   height: 500px;
