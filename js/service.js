@@ -149,9 +149,9 @@ angular.module("donSite")
                     skillImg: "#angular-patt"
                 },
                 {
-                    skillName: "Github",
-                    skillDesc: "Git repository",
-                    skillImg: "#github-patt"
+                    skillName: "Bourbon",
+                    skillDesc: "My favorite mixin library",
+                    skillImg: "#bourbon-patt"
                 },
                 {
                     skillName: "",
