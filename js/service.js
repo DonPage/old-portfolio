@@ -422,7 +422,7 @@ angular.module("donSite")
         this.getShadowArray = function(){
             console.log('SHADOW:', shadowArticleArray);
             return shadowArticleArray;
-        }
+        };
 
         //find what article should be open.
         this.getCurrentArticle = function(id, page){
@@ -450,6 +450,7 @@ angular.module("donSite")
 
         //Time left to read the rest of article, BETA lol.
         //this will be based on the height of the page relative to the bottom. TODO: make a better algorithm later.
+
 
 
 
