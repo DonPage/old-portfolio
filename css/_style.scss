@@ -377,107 +377,109 @@ nav.open {
       padding: 40px 35px;
     }
   }
-}
-
 /*
  * Footer
  */
-footer {
-  position: relative;
-  z-index: $zi4; //added this so it's over the overlay.
-  padding: 10px;
-  border-top: 1px solid $color-primary;
-  background-color: $color-lightgray;
-  a {
-    cursor: pointer;
-  }
-  h5 {
+  footer {
+    position: relative;
+    z-index: $zi4; //added this so it's over the overlay.
     padding: 10px;
-    text-align: center;
-  }
-  .elements-wrapper {
-    width: 499px;
-    margin: 0 auto;
-    height: 100%;
-    #twitter {
-      transition: all .4s ease;
-      color: $twitter;
-      &:hover {
+    border-top: 1px solid $color-primary;
+    background-color: $color-lightgray;
+    a {
+      cursor: pointer;
+    }
+    h5 {
+      padding: 10px;
+      text-align: center;
+    }
+    .elements-wrapper {
+      width: 499px;
+      margin: 0 auto;
+      height: 100%;
+      #twitter {
         transition: all .4s ease;
-        color: white;
-        background-color: $twitter;
+        color: $twitter;
+        &:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: $twitter;
+        }
+      }
+      #github {
+        transition: all .4s ease;
+        color: $github;
+        &:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: $github;
+        }
+      }
+      #codepen {
+        transition: all .4s ease;
+        color: $codepen;
+        &:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: $codepen;
+        }
+      }
+      #facebook {
+        transition: all .4s ease;
+        color: $facebook;
+        &:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: $facebook;
+        }
+      }
+      #dribble {
+        transition: all .4s ease;
+        color: $dribble;
+        &:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: $dribble;
+        }
       }
     }
-    #github {
-      transition: all .4s ease;
-      color: $github;
-      &:hover {
-        transition: all .4s ease;
-        color: white;
-        background-color: $github;
-      }
+
+    .element {
+      margin-top: 10px;
+      display: inline-block;
+      border: 2px solid black;
+      height: 100px;
+      width: 92px;
     }
-    #codepen {
-      transition: all .4s ease;
-      color: $codepen;
-      &:hover {
-        transition: all .4s ease;
-        color: white;
-        background-color: $codepen;
-      }
+
+    .e-id {
+      padding: 3px;
+      font-size: 10px;
+      text-align: right;
     }
-    #facebook {
-      transition: all .4s ease;
-      color: $facebook;
-      &:hover {
-        transition: all .4s ease;
-        color: white;
-        background-color: $facebook;
-      }
+
+    .e-name {
+      font-size: 29px;
+      //    margin-top: 10px;
     }
-    #dribble {
-      transition: all .4s ease;
-      color: $dribble;
-      &:hover {
-        transition: all .4s ease;
-        color: white;
-        background-color: $dribble;
-      }
+
+    .e-fname, .e-anumber, .e-name {
+      text-align: center;
     }
-  }
 
-  .element {
-    margin-top: 10px;
-    display: inline-block;
-    border: 2px solid black;
-    height: 100px;
-    width: 92px;
-  }
+    .e-fname {
+      margin-top: 5px;
+      font-size: 9px;
+    }
 
-  .e-id {
-    padding: 3px;
-    font-size: 10px;
-    text-align: right;
-  }
-
-  .e-name {
-    font-size: 29px;
-    //    margin-top: 10px;
-  }
-
-  .e-fname, .e-anumber, .e-name {
-    text-align: center;
-  }
-
-  .e-fname {
-    margin-top: 5px;
-    font-size: 9px;
-  }
-
-  .e-anumber {
-    font-size: 8px;
+    .e-anumber {
+      font-size: 8px;
+    }
   }
 }
+
+
+
 
 /*
  * Skills

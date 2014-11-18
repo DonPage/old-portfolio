@@ -235,7 +235,10 @@ nav.open {
   background: #f4f4f4;
   display: none;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  /*
+   * Footer
+   */ }
   #view-page h1 {
     font-size: 4em; }
   #view-page h2 {
@@ -259,79 +262,75 @@ nav.open {
         max-height: 1000px; }
     #view-page .content-inner article {
       padding: 40px 35px; }
-
-/*
- * Footer
- */
-footer {
-  position: relative;
-  z-index: 400;
-  padding: 10px;
-  border-top: 1px solid #272737;
-  background-color: #f7f7f7; }
-  footer a {
-    cursor: pointer; }
-  footer h5 {
+  #view-page footer {
+    position: relative;
+    z-index: 400;
     padding: 10px;
-    text-align: center; }
-  footer .elements-wrapper {
-    width: 499px;
-    margin: 0 auto;
-    height: 100%; }
-    footer .elements-wrapper #twitter {
-      transition: all .4s ease;
-      color: #197171; }
-      footer .elements-wrapper #twitter:hover {
+    border-top: 1px solid #272737;
+    background-color: #f7f7f7; }
+    #view-page footer a {
+      cursor: pointer; }
+    #view-page footer h5 {
+      padding: 10px;
+      text-align: center; }
+    #view-page footer .elements-wrapper {
+      width: 499px;
+      margin: 0 auto;
+      height: 100%; }
+      #view-page footer .elements-wrapper #twitter {
         transition: all .4s ease;
-        color: white;
-        background-color: #197171; }
-    footer .elements-wrapper #github {
-      transition: all .4s ease;
-      color: #ff8c59; }
-      footer .elements-wrapper #github:hover {
+        color: #197171; }
+        #view-page footer .elements-wrapper #twitter:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: #197171; }
+      #view-page footer .elements-wrapper #github {
         transition: all .4s ease;
-        color: white;
-        background-color: #ff8c59; }
-    footer .elements-wrapper #codepen {
-      transition: all .4s ease;
-      color: #bf4440; }
-      footer .elements-wrapper #codepen:hover {
+        color: #ff8c59; }
+        #view-page footer .elements-wrapper #github:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: #ff8c59; }
+      #view-page footer .elements-wrapper #codepen {
         transition: all .4s ease;
-        color: white;
-        background-color: #bf4440; }
-    footer .elements-wrapper #facebook {
-      transition: all .4s ease;
-      color: #3732bf; }
-      footer .elements-wrapper #facebook:hover {
+        color: #bf4440; }
+        #view-page footer .elements-wrapper #codepen:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: #bf4440; }
+      #view-page footer .elements-wrapper #facebook {
         transition: all .4s ease;
-        color: white;
-        background-color: #3732bf; }
-    footer .elements-wrapper #dribble {
-      transition: all .4s ease;
-      color: #cf6da4; }
-      footer .elements-wrapper #dribble:hover {
+        color: #3732bf; }
+        #view-page footer .elements-wrapper #facebook:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: #3732bf; }
+      #view-page footer .elements-wrapper #dribble {
         transition: all .4s ease;
-        color: white;
-        background-color: #cf6da4; }
-  footer .element {
-    margin-top: 10px;
-    display: inline-block;
-    border: 2px solid black;
-    height: 100px;
-    width: 92px; }
-  footer .e-id {
-    padding: 3px;
-    font-size: 10px;
-    text-align: right; }
-  footer .e-name {
-    font-size: 29px; }
-  footer .e-fname, footer .e-anumber, footer .e-name {
-    text-align: center; }
-  footer .e-fname {
-    margin-top: 5px;
-    font-size: 9px; }
-  footer .e-anumber {
-    font-size: 8px; }
+        color: #cf6da4; }
+        #view-page footer .elements-wrapper #dribble:hover {
+          transition: all .4s ease;
+          color: white;
+          background-color: #cf6da4; }
+    #view-page footer .element {
+      margin-top: 10px;
+      display: inline-block;
+      border: 2px solid black;
+      height: 100px;
+      width: 92px; }
+    #view-page footer .e-id {
+      padding: 3px;
+      font-size: 10px;
+      text-align: right; }
+    #view-page footer .e-name {
+      font-size: 29px; }
+    #view-page footer .e-fname, #view-page footer .e-anumber, #view-page footer .e-name {
+      text-align: center; }
+    #view-page footer .e-fname {
+      margin-top: 5px;
+      font-size: 9px; }
+    #view-page footer .e-anumber {
+      font-size: 8px; }
 
 /*
  * Skills
