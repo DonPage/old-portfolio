@@ -342,8 +342,7 @@ footer {
   height: 89px;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
-  fill: rgba(255, 0, 0, 0.1); }
+  background-size: cover; }
 
 .hex-grid {
   position: relative;

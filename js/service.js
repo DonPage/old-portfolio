@@ -13,22 +13,22 @@ angular.module("donSite")
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
 
             ],
@@ -37,27 +37,27 @@ angular.module("donSite")
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
 
             ],
@@ -66,22 +66,22 @@ angular.module("donSite")
                 {
                     skillName: "Jquery",
                     skillDesc: "Jquery is live.",
-                    skillImg: "black"
+                    skillImg: "#jquery-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "Illustrator",
                     skillDesc: "Making SVGs the easy way",
-                    skillImg: "black"
+                    skillImg: "#ai-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ],
             [
@@ -89,27 +89,27 @@ angular.module("donSite")
                 {
                     skillName: "Photoshop",
                     skillDesc: "Sticking with PS for my wireframing tool.",
-                    skillImg: "black"
+                    skillImg: "#ps-patt"
                 },
                 {
                     skillName: "Parfait",
-                    skillDesc: "My go-to tool when turning a wireframe into a webpage",
-                    skillImg: "black"
+                    skillDesc: "Extract your design from PSD",
+                    skillImg: "#parfait-patt"
                 },
                 {
                     skillName: "CSS3",
                     skillDesc: "",
-                    skillImg: "black"
+                    skillImg: "#css3-patt"
+                },
+                {
+                    skillName: "Bower",
+                    skillDesc: "Dependencies dependencies...",
+                    skillImg: "#bower-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
-                },
-                {
-                    skillName: "",
-                    skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ],
             [
@@ -118,22 +118,22 @@ angular.module("donSite")
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "HTML5",
                     skillDesc: "Keepin' up with the standards!",
-                    skillImg: "black"
+                    skillImg: "#html5-patt"
                 },
                 {
                     skillName: "SASS",
                     skillDesc: "Can't live without this preprocessor.",
-                    skillImg: "black"
+                    skillImg: "#sass-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ],
             [
@@ -141,27 +141,27 @@ angular.module("donSite")
                 {
                     skillName: "Javascript",
                     skillDesc: "Let's change the world, one line at a time.",
-                    skillImg: "black"
+                    skillImg: "#js-patt"
                 },
                 {
                     skillName: "Angular",
                     skillDesc: "My preferred data-binding framework",
-                    skillImg: "black"
+                    skillImg: "#angular-patt"
+                },
+                {
+                    skillName: "Github",
+                    skillDesc: "Git repository",
+                    skillImg: "#github-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
-                },
-                {
-                    skillName: "",
-                    skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ],
             [
@@ -169,22 +169,22 @@ angular.module("donSite")
                 {
                     skillName: "Terminal",
                     skillDesc: "Nerd!",
-                    skillImg: "url('#terminal-patt');"
+                    skillImg: "#terminal-patt"
                 },
                 {
                     skillName: "HandleBars",
                     skillDesc: "Templating like a boss.",
-                    skillImg: "black"
+                    skillImg: "#handlebars-patt"
                 },
                 {
                     skillName: "Git",
-                    skillDesc: "",
-                    skillImg: "black"
+                    skillDesc: "Version control baby.",
+                    skillImg: "#git-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ],
             [
@@ -192,27 +192,27 @@ angular.module("donSite")
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ],
             [
@@ -220,22 +220,22 @@ angular.module("donSite")
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 },
                 {
                     skillName: "",
                     skillDesc: "",
-                    skillImg: ""
+                    skillImg: "#nothing-patt"
                 }
             ]
         ];
