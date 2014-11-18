@@ -65,7 +65,7 @@ angular.module("donSite")
                 //column 3
                 {
                     skillName: "Jquery",
-                    skillDesc: "Jquery is live.",
+                    skillDesc: "Jquery is life.",
                     skillImg: "#jquery-patt"
                 },
                 {
