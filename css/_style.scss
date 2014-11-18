@@ -893,8 +893,34 @@ nav.open {
 
 }
 
-
-
+/*
+ * About me page
+ */
+#view-page{
+  .content-inner{
+    article.aboutMe{
+      width: 960px;
+      margin: 0 auto;
+      h1{
+        text-align: center;
+        @include roboto-font-bold;
+        .special-font{
+        }
+      }
+      h2{
+        margin-top: 20px;
+        padding-top:20px;
+        border-top: 1px solid $color-primary;
+        @include roboto-font-thin;
+        text-align: center;
+      }
+      p{
+        @include roboto-font-norm;
+        line-height: 2.5;
+      }
+    }
+  }
+}
 @import "_mediaQueries.scss";
 
 

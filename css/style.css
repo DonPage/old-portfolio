@@ -709,6 +709,28 @@ nav.open {
       border-bottom: none;
       line-height: 3.5; }
 
+/*
+ * About me page
+ */
+#view-page .content-inner article.aboutMe {
+  width: 960px;
+  margin: 0 auto; }
+  #view-page .content-inner article.aboutMe h1 {
+    text-align: center;
+    font-family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    font-weight: 700; }
+  #view-page .content-inner article.aboutMe h2 {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #272737;
+    font-family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    text-align: center; }
+  #view-page .content-inner article.aboutMe p {
+    font-family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 2.5; }
+
 /* CSS using SCSS
         Created By: Don Page on 10/19/14
         Don.page.work@gmail.com

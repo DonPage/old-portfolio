@@ -5,33 +5,8 @@
         <!--<img ng-src="images/buildings-city-sepia-1054.jpg" alt="picture" title="picture"/>-->
         <!--</div>-->
 
-        <article>
-            <h1>Heading 1</h1>
-
-            <h2>Heading 2</h2>
-
-            <h3>heading 3</h3>
-            <h4>heading 4</h4>
-            <h5>heading 5</h5>
-
-            <pre><code class="language-js">
-                    $(window).scroll(function (e) {
-                        if ($("#navBar").hasClass("open")) {
-                            if ($(this).scrollTop() < 80) {
-                                $("#small-logo").removeClass("show").fadeOut('slow');
-                                $("#navBar").css({position: "absolute", top: 80});
-                            } else {
-                                $("#small-logo").addClass("show").fadeIn('slow');
-                                $('#navBar').css({position: "fixed", top: 0});
-                            }
-                        }
-                    });
-            </code></pre>
-
-
-            <p><a href="#">Link</a> <b>Bold Text</b> <i>Italic Text</i></p>
-
-            <h1>hello about me html</h1>
+        <article class="aboutMe">
+            <h1>Hello, my name is <span class="special-font unselectable">Don Page</span></h1>
 
             <p>Lorem <a href="#">Link</a> <b>Bold Text</b> dolor sit amet, consectetur adipiscing elit. Mauris a erat
                 hendrerit, imperdiet purus quis, cursus velit. Praesent sapien augue, fringilla at pulvinar ac, dapibus
@@ -65,11 +40,12 @@
                 nunc. Aliquam nec consectetur lacus. Phasellus elementum commodo neque, quis mollis lectus tincidunt in.
             </p>
 
+            <h2>Stuff I know.</h2>
+
         </article>
 
 
     </div>
-    <h1>languages, frameworks, and software I know.</h1>
 
     <div class="hex-grid">
         <div class="honeycomb ">
