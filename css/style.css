@@ -707,6 +707,8 @@ nav.open {
     margin: 0 5px;
     position: relative;
     top: 20px; }
+    .pageNumWrapper .pageNumber:hover {
+      background-color: white; }
     .pageNumWrapper .pageNumber a {
       border-bottom: none;
       line-height: 3.5; }

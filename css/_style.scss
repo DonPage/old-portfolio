@@ -887,11 +887,15 @@ nav.open {
     margin: 0 5px;
     position: relative;
     top: 20px;
+    &:hover{
+      background-color: white;
+    }
     a{
       border-bottom: none;
       line-height: 3.5;
     }
   }
+
 
 }
 

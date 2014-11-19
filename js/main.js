@@ -74,7 +74,6 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         $scope.authorInfo = article.author[0];
 
         $("#back2top").on('click', function(){
-            console.log('back2top');
             $('html, body').animate(
                 { scrollTop: 0 },
                 { duration: 300,
