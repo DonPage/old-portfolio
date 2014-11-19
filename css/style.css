@@ -345,7 +345,7 @@ nav.open {
   background-size: cover; }
 
 .hex-grid {
-  top: -50px;
+  top: -52px;
   position: relative;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -712,10 +712,11 @@ nav.open {
       line-height: 3.5; }
 
 /*
- * About me page
+ * About/ego page
  */
 #view-page .content-inner article.aboutMe {
-  width: 960px;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto; }
   #view-page .content-inner article.aboutMe h1 {
     text-align: center;
@@ -777,7 +778,11 @@ nav.open {
     right: 30px; }
 
   .elements-wrapper {
-    display: none; } }
+    display: none; }
+
+  #view-page .content-inner article.aboutMe {
+    padding: 1px;
+    width: 90%; } }
 @media only screen and (max-width: 750px) {
   nav ul li {
     font-size: 0.76em;

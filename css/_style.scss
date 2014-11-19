@@ -498,7 +498,7 @@ nav.open {
 }
 
 .hex-grid {
-  top: -50px; //this is so it's closer to the rest of the content.
+  top: -52px; //this is so it's closer to the rest of the content.
   position: relative;
   @include transition(all .3s ease-out);
   height: 500px;
@@ -896,12 +896,13 @@ nav.open {
 }
 
 /*
- * About me page
+ * About/ego page
  */
 #view-page{
   .content-inner{
     article.aboutMe{
-      width: 960px;
+      max-width: 960px;
+      width: 100%;
       margin: 0 auto;
       h1{
         text-align: center;

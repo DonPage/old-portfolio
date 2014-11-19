@@ -88,7 +88,7 @@ angular.module("donSite")
                 //column 4
                 {
                     skillName: "Photoshop",
-                    skillDesc: "Sticking with PS for my wireframing tool.",
+                    skillDesc: "",
                     skillImg: "#ps-patt"
                 },
                 {
