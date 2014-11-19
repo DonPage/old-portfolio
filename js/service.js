@@ -243,10 +243,10 @@ angular.module("donSite")
         /*
          * ArticleColors
          *  TODO: future me will make a function that automatically chooses the right color based on typeName/type.
-         * Software Review: #83b1ff
+         * Review: #83b1ff
          * Case Study: #DB5643
          * Open Source: #ff6666
-         * Angular: #70c989
+         * Life: #70c989
          */
 
         var articleArray = [

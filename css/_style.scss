@@ -906,8 +906,9 @@ nav.open {
       margin: 0 auto;
       h1{
         text-align: center;
-        @include roboto-font-bold;
+        @include roboto-font-thin;
         .special-font{
+          @include megrim-font;
         }
       }
       h2{
@@ -920,6 +921,24 @@ nav.open {
       p{
         @include roboto-font-norm;
         line-height: 2.5;
+      }
+      .row{
+        width: 50%;
+        margin: 20px auto;
+        display: block;
+        height: auto;
+        @include clearfix;
+        .left-text{
+          float: left;
+          height: auto;
+          text-align: right;
+        }
+        .right-text{
+          height: auto;
+          float: right;
+          text-align: left;
+          width: 50%;
+        }
       }
     }
   }

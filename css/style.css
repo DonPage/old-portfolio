@@ -721,7 +721,10 @@ nav.open {
   #view-page .content-inner article.aboutMe h1 {
     text-align: center;
     font-family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
-    font-weight: 700; }
+    font-weight: 100; }
+    #view-page .content-inner article.aboutMe h1 .special-font {
+      font-family: "Megrim", "Open Sans" Helvetica, Arial, sans-serif;
+      font-weight: normal; }
   #view-page .content-inner article.aboutMe h2 {
     margin-top: 20px;
     padding-top: 20px;
@@ -733,6 +736,24 @@ nav.open {
     font-family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 2.5; }
+  #view-page .content-inner article.aboutMe .row {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    height: auto; }
+    #view-page .content-inner article.aboutMe .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #view-page .content-inner article.aboutMe .row .left-text {
+      float: left;
+      height: auto;
+      text-align: right; }
+    #view-page .content-inner article.aboutMe .row .right-text {
+      height: auto;
+      float: right;
+      text-align: left;
+      width: 50%; }
 
 /* CSS using SCSS
         Created By: Don Page on 10/19/14
