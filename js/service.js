@@ -145,7 +145,7 @@ angular.module("donSite")
                 },
                 {
                     skillName: "Angular",
-                    skillDesc: "My preferred data-binding framework",
+                    skillDesc: "My preferred MVC framework",
                     skillImg: "#angular-patt"
                 },
                 {
