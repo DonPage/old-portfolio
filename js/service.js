@@ -79,9 +79,9 @@ angular.module("donSite")
                     skillImg: "#ai-patt"
                 },
                 {
-                    skillName: "",
-                    skillDesc: "",
-                    skillImg: "#nothing-patt"
+                    skillName: "Firebase",
+                    skillDesc: "my data stay synced",
+                    skillImg: "#firebase-patt"
                 }
             ],
             [
