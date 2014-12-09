@@ -829,7 +829,11 @@ nav.open {
     width: 100%; }
     .blog-wrapper div.nofilter-wrapper div.article-wrapper a article {
       width: 100%;
-      margin: 20px 0; } }
+      margin: 20px 0; }
+
+  #view-page .content-inner article.aboutMe .row {
+    width: 100%;
+    margin: 10px auto; } }
 @media only screen and (max-width: 500px) {
   .article-outer-wrapper .article-inner-wrapper {
     padding: 18px 0; }
@@ -846,4 +850,7 @@ nav.open {
     margin-right: 0; }
 
   .blog-wrapper div.nofilter-wrapper div.article-wrapper a article .b-desc span {
-    width: 22%; } }
+    width: 22%; }
+
+  #view-page h1 {
+    font-size: 2.5em; } }
