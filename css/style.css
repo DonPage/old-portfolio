@@ -763,6 +763,19 @@ nav.open {
 .work-wrapper--outer {
   height: 100vh; }
 
+.work-wrapper--inner {
+  height: 100%; }
+  .work-wrapper--inner .left-info {
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: red; }
+  .work-wrapper--inner .right-info {
+    float: right;
+    height: 100%;
+    width: 80%;
+    background-color: green; }
+
 /* CSS using SCSS
         Created By: Don Page on 10/19/14
         Don.page.work@gmail.com
