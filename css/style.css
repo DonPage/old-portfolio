@@ -757,6 +757,12 @@ nav.open {
       text-align: left;
       width: 50%; }
 
+/*
+ * WorkPage
+ */
+.work-wrapper--outer {
+  height: 100vh; }
+
 /* CSS using SCSS
         Created By: Don Page on 10/19/14
         Don.page.work@gmail.com

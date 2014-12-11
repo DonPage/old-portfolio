@@ -35,6 +35,10 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
     .controller("workController", function($scope, siteService){
         siteService.openPage();
+
+        $scope.testing = 'GOT TEST';
+
+
     })
 
     .controller("egoController", function ($scope, siteService) {
