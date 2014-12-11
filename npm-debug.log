@@ -1,0 +1,175 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'retire' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'retire', null ]
+5 verbose cache add name=undefined spec="retire" args=["retire",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'retire',
+6 verbose parsed url   path: 'retire',
+6 verbose parsed url   href: 'retire' }
+7 silly lockFile f5a82842-retire retire
+8 verbose lock retire /Users/donpage/.npm/f5a82842-retire.lock
+9 silly lockFile f5a82842-retire retire
+10 silly lockFile f5a82842-retire retire
+11 verbose addNamed [ 'retire', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 8749e500-retire retire@
+14 verbose lock retire@ /Users/donpage/.npm/8749e500-retire.lock
+15 silly addNameRange { name: 'retire', range: '*', hasData: false }
+16 verbose request where is /retire
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 7a389dffb66c7c2c
+19 verbose url raw /retire
+20 verbose url resolving [ 'https://registry.npmjs.org/', './retire' ]
+21 verbose url resolved https://registry.npmjs.org/retire
+22 verbose request where is https://registry.npmjs.org/retire
+23 info trying registry request attempt 1 at 22:55:54
+24 http GET https://registry.npmjs.org/retire
+25 http 200 https://registry.npmjs.org/retire
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Wed, 10 Dec 2014 03:55:55 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"16KBQFF8CIJZ9B8QIX03NM3FS"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '34642',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1418183755.545876,VS0,VE18',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'retire', range: '*', hasData: true }
+28 silly addNameRange versions [ 'retire',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.1.9',
+28 silly addNameRange     '0.1.10',
+28 silly addNameRange     '0.1.11',
+28 silly addNameRange     '0.1.12',
+28 silly addNameRange     '0.1.13',
+28 silly addNameRange     '0.1.14',
+28 silly addNameRange     '0.1.15',
+28 silly addNameRange     '0.1.16',
+28 silly addNameRange     '0.1.17',
+28 silly addNameRange     '0.1.18',
+28 silly addNameRange     '0.1.19',
+28 silly addNameRange     '0.1.20',
+28 silly addNameRange     '0.1.21',
+28 silly addNameRange     '0.1.22',
+28 silly addNameRange     '0.1.23',
+28 silly addNameRange     '0.1.24',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.5',
+28 silly addNameRange     '0.3.6' ] ]
+29 verbose addNamed [ 'retire', '0.3.6' ]
+30 verbose addNamed [ '0.3.6', '0.3.6' ]
+31 silly lockFile d7e00ad6-retire-0-3-6 retire@0.3.6
+32 verbose lock retire@0.3.6 /Users/donpage/.npm/d7e00ad6-retire-0-3-6.lock
+33 silly lockFile 19870a0e-pmjs-org-retire-retire-0-3-6-tgz https://registry.npmjs.org/retire/-/retire-0.3.6.tgz
+34 verbose lock https://registry.npmjs.org/retire/-/retire-0.3.6.tgz /Users/donpage/.npm/19870a0e-pmjs-org-retire-retire-0-3-6-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/retire/-/retire-0.3.6.tgz',
+35 verbose addRemoteTarball   'e863d982c08f2437d3d3c612e967fd173163adbe' ]
+36 info retry fetch attempt 1 at 22:55:55
+37 verbose fetch to= /var/folders/4z/rp777vsj3_96092r7jw8m9qh0000gn/T/npm-21513-ENEU4_Iv/registry.npmjs.org/retire/-/retire-0.3.6.tgz
+38 http GET https://registry.npmjs.org/retire/-/retire-0.3.6.tgz
+39 http 200 https://registry.npmjs.org/retire/-/retire-0.3.6.tgz
+40 silly lockFile 19870a0e-pmjs-org-retire-retire-0-3-6-tgz https://registry.npmjs.org/retire/-/retire-0.3.6.tgz
+41 silly lockFile 19870a0e-pmjs-org-retire-retire-0-3-6-tgz https://registry.npmjs.org/retire/-/retire-0.3.6.tgz
+42 silly lockFile d7e00ad6-retire-0-3-6 retire@0.3.6
+43 silly lockFile d7e00ad6-retire-0-3-6 retire@0.3.6
+44 silly lockFile 8749e500-retire retire@
+45 silly lockFile 8749e500-retire retire@
+46 silly resolved [ { author: { name: 'Erlend Oftedal', email: 'erlend@oftedal.no' },
+46 silly resolved     name: 'retire',
+46 silly resolved     description: 'Retire is a tool for detecting use of vulnerable libraries',
+46 silly resolved     version: '0.3.6',
+46 silly resolved     repository: { type: 'git', url: 'https://github.com/bekk/retire.js.git' },
+46 silly resolved     bin: { retire: './bin/retire' },
+46 silly resolved     main: './lib/retire.js',
+46 silly resolved     dependencies:
+46 silly resolved      { underscore: '1.7.x',
+46 silly resolved        commander: '2.5.x',
+46 silly resolved        'read-installed': '3.1.x',
+46 silly resolved        walkdir: '0.0.7',
+46 silly resolved        request: '~2.48.x' },
+46 silly resolved     devDependencies: { nodeunit: '', jshint: '' },
+46 silly resolved     scripts: { test: './test' },
+46 silly resolved     engines: { node: '>= 0.8.0' },
+46 silly resolved     bugs: { url: 'https://github.com/bekk/retire.js/issues' },
+46 silly resolved     homepage: 'https://github.com/bekk/retire.js',
+46 silly resolved     _id: 'retire@0.3.6',
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'e863d982c08f2437d3d3c612e967fd173163adbe',
+46 silly resolved        tarball: 'http://registry.npmjs.org/retire/-/retire-0.3.6.tgz' },
+46 silly resolved     _from: 'retire@',
+46 silly resolved     _npmVersion: '1.4.6',
+46 silly resolved     _npmUser: { name: 'eoftedal', email: 'erlend@oftedal.no' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: 'e863d982c08f2437d3d3c612e967fd173163adbe',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/retire/-/retire-0.3.6.tgz' } ]
+47 info install retire@0.3.6 into /usr/local/lib
+48 info installOne retire@0.3.6
+49 verbose lib/node_modules/retire unbuild
+50 verbose tar unpack /Users/donpage/.npm/retire/0.3.6/package.tgz
+51 silly lockFile 31bc345d-sr-local-lib-node-modules-retire tar:///usr/local/lib/node_modules/retire
+52 verbose lock tar:///usr/local/lib/node_modules/retire /Users/donpage/.npm/31bc345d-sr-local-lib-node-modules-retire.lock
+53 silly lockFile 21ab9a96-age-npm-retire-0-3-6-package-tgz tar:///Users/donpage/.npm/retire/0.3.6/package.tgz
+54 verbose lock tar:///Users/donpage/.npm/retire/0.3.6/package.tgz /Users/donpage/.npm/21ab9a96-age-npm-retire-0-3-6-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/retire'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/retire']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/retire',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/retire',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.1.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "retire"
+60 error cwd /Users/donpage/Desktop/don-portfolio
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/retire
+64 error fstream_path /usr/local/lib/node_modules/retire
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/retire'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]

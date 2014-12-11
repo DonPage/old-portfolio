@@ -13,6 +13,10 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 controller: "blogController",
                 templateUrl: "parts/blog.html"
             })
+            .when("/work", {
+                controller: "workController",
+                templateUrl: "parts/work.html"
+            })
             .when("/blog/:pageNumber/:articleID", {
                 controller: "articleController",
                 templateUrl: function($routeParams){
@@ -26,8 +30,11 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
     })
 
     .controller("homeController", function ($scope, siteService) {
-
         siteService.closePage();
+    })
+
+    .controller("workController", function($scope, siteService){
+        siteService.openPage();
     })
 
     .controller("egoController", function ($scope, siteService) {
