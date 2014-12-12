@@ -60,13 +60,39 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
         $scope.openProject = function (k) {
             console.log("openProject", k);
-            window.location.hash = "/work/"+k;
+//            window.location.hash = "/work/"+k;
+            if($("#"+k).hasClass("isOpen") == true){
+                $("#"+k)
+                    .velocity({ height: "-=20em"}, {duration: "normal"})
+                    .removeClass("isOpen");
+
+                $("#pInfo-"+k)
+                    .velocity({ left: "-100%"}, {duration: "slow"} );
+                $("#pLinks-"+k)
+                    .velocity({ top: "-20em"}, {duration: "slow"} );
+
+            } else {
+                $("#"+k)
+                    .velocity({ height: "+=20em" }, {duration: "normal"})
+                    .addClass("isOpen");
+
+                $("#pInfo-"+k)
+                    .velocity({ left: "0%"}, {duration: "slow"} );
+                $("#pLinks-"+k)
+                    .velocity({ top: "0%"}, {duration: "slow"} );
+            }
+        };
+
+        $scope.newTab = function (link) {
+            if (link == "" || link == " "){
+                return;
+            }
+            window.open(link, '_blank').focus();
         }
     })
 
     .controller("projectController", function($scope, siteService, $routeParams){
         siteService.openPage();
-
     })
 
     .controller("egoController", function ($scope, siteService) {

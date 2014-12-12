@@ -13,7 +13,8 @@
             <div class="right-info">
                 <div class="all-project-wrapper">
 
-                    <div class="project" ng-repeat="project in projectArray | filter:activeType()" ng-click="openProject(project.key)">
+                    <div class="project" ng-repeat="project in projectArray | filter:activeType()"
+                         ng-click="openProject(project.key)" id="{{project.key}}">
                         <div class="p-title">
                             <p>{{project.title}}</p>
                         </div>
@@ -22,6 +23,19 @@
                         </div>
                         <div class="p-p">
 
+                        </div>
+                        <div class="p-links" id="pLinks-{{project.key}}">
+                            <a ng-click="newTab(project.githubLink)">github</a>
+                            <a ng-click="newTab(project.imageLink)">link</a>
+
+                        </div>
+                        <div class="p-info" id="pInfo-{{project.key}}">
+                            <p>Nulla aliquet et urna id euismod. Vivamus ornare lacus venenatis, congue arcu at, semper ex.
+                                Maecenas
+                                lobortis, velit vitae pellentesque faucibus, nibh massa aliquet libero, eu pharetra nibh nunc in
+                                ipsum.
+                                Maecenas quis ante placerat, consequat eros ut, dapibus ex. Praesent vitae ex ac felis semper
+                                iaculis.</p>
                         </div>
                         <div class="p-bg" style="background-image: url({{project.bg}})">
 

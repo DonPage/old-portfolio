@@ -10,16 +10,20 @@ angular.module("donSite")
                 title: "Karma Lounge",
                 type: "development",
                 bg: "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118181.jpg",
-                key: "karmalounge"
+                key: "karmalounge",
+                githubLink: "",
+                imageLink: ""
             },
             {
                 title: "Angular Labs",
                 type: "design",
                 bg: "http://i.imgur.com/XHm9Rs1.png",
-                key: "angularlabs"
+                key: "angularlabs",
+                githubLink: "",
+                imageLink: "http://i.imgur.com/XHm9Rs1.png"
             }
 
-        ]
+        ];
 
 
         var skillsArray = [
