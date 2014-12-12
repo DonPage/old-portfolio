@@ -5,6 +5,20 @@ angular.module("donSite")
         var currentArticle = null;
         var shadowArticleArray = [];
 
+        var projectsArray = [
+            {
+                title: "Karma Lounge",
+                type: "development",
+                bg: "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118181.jpg"
+            },
+            {
+                title: "Angular Labs",
+                type: "design",
+                bg: "http://i.imgur.com/XHm9Rs1.png"
+            }
+
+        ]
+
 
         var skillsArray = [
             [
@@ -447,6 +461,10 @@ angular.module("donSite")
             document.location.hash = 'goingHome';
 //            $(".overlay").fadeOut('fast'); //this is handled by openPage closePage functions
         });
+
+        this.getProjects = function () {
+            return projectsArray;
+        }
 
         //Time left to read the rest of article, BETA lol.
         //this will be based on the height of the page relative to the bottom. TODO: make a better algorithm later.

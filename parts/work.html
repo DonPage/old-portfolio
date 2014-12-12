@@ -3,11 +3,49 @@
         <div class="work-wrapper--inner">
 
             <div class="left-info">
-asdfasd
+                <ul>
+                    <li ng-click="changeType('all')">All</li>
+                    <li ng-click="changeType('development')">Development</li>
+                    <li ng-click="changeType('design')">Design</li>
+                </ul>
             </div>
 
             <div class="right-info">
-                asdfasd
+                <div class="all-project-wrapper">
+
+                    <div class="project" ng-repeat="project in projectArray | filter:activeType()">
+                        <div class="p-title">
+                            <p>{{project.title}}</p>
+                        </div>
+                        <div class="p-type">
+                            <p>{{project.type}}</p>
+                        </div>
+                        <div class="p-p">
+
+                        </div>
+                        <div class="p-bg" style="background-image: url({{project.bg}})">
+
+                        </div>
+
+                    </div>
+                    <!--<div class="project">-->
+                        <!--<div class="p-title">-->
+                            <!--<p>Angular Labs</p>-->
+                        <!--</div>-->
+                        <!--<div class="p-info">-->
+                            <!--<p>logo</p>-->
+                        <!--</div>-->
+                        <!--<div class="p-p">-->
+
+                        <!--</div>-->
+                        <!--<div class="p-bg" style="background-image: url(http://i.imgur.com/XHm9Rs1.png)">-->
+
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+
+                </div>
             </div>
 
 

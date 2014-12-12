@@ -13,7 +13,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 controller: "blogController",
                 templateUrl: "parts/blog.html"
             })
-            .when("/work", {
+            .when("/work/:workType", {
                 controller: "workController",
                 templateUrl: "parts/work.html"
             })
@@ -33,10 +33,24 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         siteService.closePage();
     })
 
-    .controller("workController", function($scope, siteService){
+    .controller("workController", function($scope, siteService, $routeParams){
         siteService.openPage();
+        console.log("route:", $routeParams.workType);
+        $scope.activeType = function () {
+            if ($routeParams.workType == "all") {
+                return "";
+            } else {
+                return $routeParams.workType;
+            }
+        };
 
-        $scope.testing = 'GOT TEST';
+
+        $scope.projectArray = siteService.getProjects();
+
+        $scope.changeType = function (type) {
+            console.log("changeType:", type);
+            window.location.hash = "/work/"+type;
+        }
 
 
     })
