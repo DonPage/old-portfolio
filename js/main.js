@@ -13,7 +13,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 controller: "blogController",
                 templateUrl: "parts/blog.html"
             })
-            .when("/work/:workType", {
+            .when("/work", {
                 controller: "workController",
                 templateUrl: "parts/work.html"
             })
@@ -22,6 +22,12 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 templateUrl: function($routeParams){
                     //depending on the articleID ($routeParam), this function will dynamically load the correct html page.
                     return "articles/"+$routeParams.articleID+".html";
+                }
+            })
+            .when("/work/:projectID", {
+                controller: "projectController",
+                templateUrl: function($routeParams){
+                    return "projects/"+$routeParams.projectID+".html";
                 }
             })
             .otherwise({
@@ -37,43 +43,29 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         siteService.openPage();
 
         $scope.projectArray = siteService.getProjects();
-//        $scope.activeType = function () {
-//            if ($routeParams.workType == "all") {
-//                return "";
-//            } else {
-//                return $routeParams.workType;
-//            }
-//        };
 
-//
-//        $scope.changeType = function (type) {
-//            console.log("changeType:", type);
-//            window.location.hash = "/work/"+type;
-//        }
-
-        //-------
         var filter = "";
 
         $scope.activeType = function () {
             return filter;
         };
         $scope.changeType = function(type){
-//            $(".all-project-wrapper")
-//                .velocity("transition.slideRightOut", 500)
-//                .velocity({ delay: 10 })
-//                .velocity({display: "none"})
-//                .velocity("transition.slideRightIn", 500)
-//                .velocity({delay: 10})
+//            $(".all-project-wrapper").velocity("transition.slideRightOut", 500);
+//            $(".all-project-wrapper").velocity("transition.slideRightIn", 500)
 //                .velocity({complete: function(){
 //                    console.log(type);
-//                    filter = type;
-//
 //                }});
             filter = type;
+        };
 
-
-
+        $scope.openProject = function (k) {
+            console.log("openProject", k);
+            window.location.hash = "/work/"+k;
         }
+    })
+
+    .controller("projectController", function($scope, siteService, $routeParams){
+        siteService.openPage();
 
     })
 
@@ -128,11 +120,6 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                 }
             )
         });
-
-
-
-
-
 
     });
 

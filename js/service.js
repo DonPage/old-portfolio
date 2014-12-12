@@ -9,12 +9,14 @@ angular.module("donSite")
             {
                 title: "Karma Lounge",
                 type: "development",
-                bg: "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118181.jpg"
+                bg: "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118181.jpg",
+                key: "karmalounge"
             },
             {
                 title: "Angular Labs",
                 type: "design",
-                bg: "http://i.imgur.com/XHm9Rs1.png"
+                bg: "http://i.imgur.com/XHm9Rs1.png",
+                key: "angularlabs"
             }
 
         ]
@@ -464,7 +466,11 @@ angular.module("donSite")
 
         this.getProjects = function () {
             return projectsArray;
-        }
+        };
+
+        this.getType = function(type){
+            return type;
+        };
 
         //Time left to read the rest of article, BETA lol.
         //this will be based on the height of the page relative to the bottom. TODO: make a better algorithm later.

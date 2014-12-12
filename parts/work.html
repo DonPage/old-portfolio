@@ -13,7 +13,7 @@
             <div class="right-info">
                 <div class="all-project-wrapper">
 
-                    <div class="project" ng-repeat="project in projectArray | filter:activeType()">
+                    <div class="project" ng-repeat="project in projectArray | filter:activeType()" ng-click="openProject(project.key)">
                         <div class="p-title">
                             <p>{{project.title}}</p>
                         </div>
@@ -28,22 +28,6 @@
                         </div>
 
                     </div>
-                    <!--<div class="project">-->
-                        <!--<div class="p-title">-->
-                            <!--<p>Angular Labs</p>-->
-                        <!--</div>-->
-                        <!--<div class="p-info">-->
-                            <!--<p>logo</p>-->
-                        <!--</div>-->
-                        <!--<div class="p-p">-->
-
-                        <!--</div>-->
-                        <!--<div class="p-bg" style="background-image: url(http://i.imgur.com/XHm9Rs1.png)">-->
-
-                        <!--</div>-->
-
-                    <!--</div>-->
-
 
                 </div>
             </div>
