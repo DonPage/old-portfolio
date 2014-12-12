@@ -35,23 +35,45 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
     .controller("workController", function($scope, siteService, $routeParams){
         siteService.openPage();
-        console.log("route:", $routeParams.workType);
-        $scope.activeType = function () {
-            if ($routeParams.workType == "all") {
-                return "";
-            } else {
-                return $routeParams.workType;
-            }
-        };
-
 
         $scope.projectArray = siteService.getProjects();
+//        $scope.activeType = function () {
+//            if ($routeParams.workType == "all") {
+//                return "";
+//            } else {
+//                return $routeParams.workType;
+//            }
+//        };
 
-        $scope.changeType = function (type) {
-            console.log("changeType:", type);
-            window.location.hash = "/work/"+type;
+//
+//        $scope.changeType = function (type) {
+//            console.log("changeType:", type);
+//            window.location.hash = "/work/"+type;
+//        }
+
+        //-------
+        var filter = "";
+
+        $scope.activeType = function () {
+            return filter;
+        };
+        $scope.changeType = function(type){
+//            $(".all-project-wrapper")
+//                .velocity("transition.slideRightOut", 500)
+//                .velocity({ delay: 10 })
+//                .velocity({display: "none"})
+//                .velocity("transition.slideRightIn", 500)
+//                .velocity({delay: 10})
+//                .velocity({complete: function(){
+//                    console.log(type);
+//                    filter = type;
+//
+//                }});
+            filter = type;
+
+
+
         }
-
 
     })
 
