@@ -9,10 +9,10 @@ angular.module("donSite")
             {
                 title: "Karma Lounge",
                 type: "development",
-                bg: "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118181.jpg",
+                bg: "http://i.imgur.com/yUFAOn8.png",
                 key: "karmalounge",
                 githubLink: "",
-                imageLink: ""
+                imageLink: "http://i.imgur.com/yUFAOn8.png"
             },
             {
                 title: "Angular Labs",
