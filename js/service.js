@@ -12,7 +12,8 @@ angular.module("donSite")
                 bg: "http://i.imgur.com/yUFAOn8.png",
                 key: "karmalounge",
                 githubLink: "",
-                imageLink: "http://i.imgur.com/yUFAOn8.png"
+                imageLink: "http://i.imgur.com/yUFAOn8.png",
+                desc: "Karma Lounge is real time feed of bets, matches, and trades in GuildWars2 & Twitch. NodeJS was used to read twitch chat API. Firebase for the realtime data syncing with backend servers. Angular used to make this project at SPA (single page application)."
             },
             {
                 title: "Angular Labs",
@@ -20,7 +21,9 @@ angular.module("donSite")
                 bg: "http://i.imgur.com/XHm9Rs1.png",
                 key: "angularlabs",
                 githubLink: "",
-                imageLink: "http://i.imgur.com/XHm9Rs1.png"
+                imageLink: "http://i.imgur.com/XHm9Rs1.png",
+                desc: "With my love for angular I decided to make a logo for my future angular blog? Maybe? Adobe Illustrator used for this design."
+
             },
             {
                 title: "Source Box",
@@ -28,7 +31,9 @@ angular.module("donSite")
                 bg: "http://i.imgur.com/tjSbD7l.png",
                 key: "sourcebox",
                 githubLink: "",
-                imageLink: "http://i.imgur.com/tjSbD7l.png"
+                imageLink: "http://i.imgur.com/tjSbD7l.png",
+                desc: "This is the logo I created for one of my personal projects, a voice recognition twitch bot (under construction). Adobe Illustrator was used to create this logo."
+
             }
 
         ];
@@ -279,38 +284,44 @@ angular.module("donSite")
 
         var articleArray = [
             [
-            {
-                ID: "MEGAvsDropbox",
-                img: "https://lh6.ggpht.com/Gws2S5Xxlwoxvl2Ho_R1nu49VprWOGtqIFuC5ZNRM8osf3-mbNq72YNxgkmkoaGx916n1a05ew39w7nLsOLl4-4=s852",
-                title: "MEGA vs Dropbox",
-                typeImg: "",
-                type: "Review",
-                typeColor: "#83b1ff",
-                tags: ["Software", "Blog"],
-                author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
-            },
-            {
-                ID: "test2",
-                img: "http://i.imgur.com/eX9ytrN.jpg?1",
-                title: "Test Title",
-                typeImg: "",
-                type: "Case Study",
-                typeColor: "#DB5643",
-                tags: ["Test1"],
-                author: [{name: "James Joe", title: "Web Designer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+                {
+                    ID: "MEGAvsDropbox",
+                    img: "https://lh6.ggpht.com/Gws2S5Xxlwoxvl2Ho_R1nu49VprWOGtqIFuC5ZNRM8osf3-mbNq72YNxgkmkoaGx916n1a05ew39w7nLsOLl4-4=s852",
+                    title: "MEGA vs Dropbox",
+                    typeImg: "",
+                    type: "Review",
+                    typeColor: "#83b1ff",
+                    tags: ["Software", "Blog"],
+                    author: [
+                        {name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}
+                    ]
+                },
+                {
+                    ID: "test2",
+                    img: "http://i.imgur.com/eX9ytrN.jpg?1",
+                    title: "Test Title",
+                    typeImg: "",
+                    type: "Case Study",
+                    typeColor: "#DB5643",
+                    tags: ["Test1"],
+                    author: [
+                        {name: "James Joe", title: "Web Designer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}
+                    ]
 
-            },
-            {
-                ID: "AngularTest",
-                img: "http://i.imgur.com/XHm9Rs1.png",
-                title: "Angular Labs",
-                typeImg: "",
-                type: "Angular",
-                typeColor: "#70c989",
-                tags: ["Angular", "something"],
-                author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+                },
+                {
+                    ID: "AngularTest",
+                    img: "http://i.imgur.com/XHm9Rs1.png",
+                    title: "Angular Labs",
+                    typeImg: "",
+                    type: "Angular",
+                    typeColor: "#70c989",
+                    tags: ["Angular", "something"],
+                    author: [
+                        {name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}
+                    ]
 
-            }
+                }
             ],
             [
                 {
@@ -321,7 +332,9 @@ angular.module("donSite")
                     type: "Review",
                     typeColor: "#83b1ff",
                     tags: ["Software", "Blog"],
-                    author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+                    author: [
+                        {name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}
+                    ]
                 },
                 {
                     ID: "test2",
@@ -331,7 +344,9 @@ angular.module("donSite")
                     type: "Case Study",
                     typeColor: "#DB5643",
                     tags: ["Test1"],
-                    author: [{name: "James Joe", title: "Web Designer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+                    author: [
+                        {name: "James Joe", title: "Web Designer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}
+                    ]
 
                 },
                 {
@@ -342,23 +357,25 @@ angular.module("donSite")
                     type: "Angular",
                     typeColor: "#70c989",
                     tags: ["Angular", "something"],
-                    author: [{name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}]
+                    author: [
+                        {name: "Don Page", title: "Web Developer", avatar: "http://xcellis.com/wp-content/uploads/2013/09/avatar-placeholder-300x284.png"}
+                    ]
 
                 }
             ]
         ];
 
 
-        this.getArticleArray = function(pageNum){
+        this.getArticleArray = function (pageNum) {
             console.log('getArticleArray:', articleArray[pageNum - 1]);
             return articleArray[pageNum - 1]; //-1 because array begins in 0 but page number counts from 1.
         }
 
-        this.populateShadowArray = function(){
+        this.populateShadowArray = function () {
             shadowArticleArray = []; //future me will redo the logic that fills up the shadow array so it only happens once.
             console.log('populateShadowArray from', articleArray);
-            for (var i=0; i < articleArray.length; i++){ //wemustgodeeper.jpg
-                for (var y=0; y < articleArray[i].length; y++){
+            for (var i = 0; i < articleArray.length; i++) { //wemustgodeeper.jpg
+                for (var y = 0; y < articleArray[i].length; y++) {
                     console.log('pushing', articleArray[i][y]);
                     shadowArticleArray.push(articleArray[i][y]);
                 }
@@ -366,8 +383,7 @@ angular.module("donSite")
         };
 
 
-
-        this.getArticlePages = function(){
+        this.getArticlePages = function () {
             console.log(articleArray);
             return articleArray;
         }
@@ -442,36 +458,35 @@ angular.module("donSite")
             });
         };
 
-        this.getArticle = function(id){
+        this.getArticle = function (id) {
             console.log('GETTING ARTICLE');
-            document.location.hash = "/blog/"+id;
+            document.location.hash = "/blog/" + id;
         };
 
-        this.getShadowArray = function(){
+        this.getShadowArray = function () {
             console.log('SHADOW:', shadowArticleArray);
             return shadowArticleArray;
         };
 
         //find what article should be open.
-        this.getCurrentArticle = function(id, page){
-            for (var i = 0; i < articleArray[page - 1].length; i++){
-                if (articleArray[page - 1][i].ID == id){
+        this.getCurrentArticle = function (id, page) {
+            for (var i = 0; i < articleArray[page - 1].length; i++) {
+                if (articleArray[page - 1][i].ID == id) {
                     currentArticle = articleArray[page - 1][i];
                     console.log('FOUND MATCH', articleArray[i]);
                     break; //the break is so the loop doesnt keep running after a match is found.
-                }else{
+                } else {
                     console.log('didn\'t find match')
                 }
             }
         };
 
-        this.loadArticle = function(){
+        this.loadArticle = function () {
             return currentArticle;
         };
 
 
-
-        $(".overlay").on('click', function(){
+        $(".overlay").on('click', function () {
             document.location.hash = 'goingHome';
 //            $(".overlay").fadeOut('fast'); //this is handled by openPage closePage functions
         });
@@ -480,14 +495,12 @@ angular.module("donSite")
             return projectsArray;
         };
 
-        this.getType = function(type){
+        this.getType = function (type) {
             return type;
         };
 
         //Time left to read the rest of article, BETA lol.
         //this will be based on the height of the page relative to the bottom. TODO: make a better algorithm later.
-
-
 
 
     });
