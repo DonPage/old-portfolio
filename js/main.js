@@ -63,7 +63,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 //            window.location.hash = "/work/"+k;
             if($("#"+k).hasClass("isOpen") == true){
                 $("#"+k)
-                    .velocity({ height: "-=20em"}, {duration: "normal"})
+                    .velocity({ height: "5.8em"}, {duration: "normal"})
                     .removeClass("isOpen");
 
                 $("#pInfo-"+k)
@@ -73,7 +73,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
             } else {
                 $("#"+k)
-                    .velocity({ height: "+=20em" }, {duration: "normal"})
+                    .velocity({ height: "30em" }, {duration: "normal"})
                     .addClass("isOpen");
 
                 $("#pInfo-"+k)
