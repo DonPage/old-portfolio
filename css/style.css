@@ -874,10 +874,10 @@ nav.open {
         color: #272737; }
 
 #project-video {
-  position: static;
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   background-size: cover;
   z-index: 100; }

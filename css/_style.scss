@@ -1075,9 +1075,9 @@ nav.open {
   }
 }
 #project-video{
-  position: static;
+  position: absolute;
   min-width: 100%; min-height: 100%;
-  width: auto; height: auto;
+  width: 100%; height: auto;
   background-size: cover;
   z-index: $zi1;
 }
