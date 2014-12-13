@@ -24,9 +24,15 @@
                         <div class="p-p">
 
                         </div>
+                        <video ng-show="project.video.length > 1" autoplay loop="true" poster="{{project.imageLink}}" id="project-video"  style="background-image: url({{project.bg}})">
+                            <source src="{{project.video}}" type="video/webm">
+                            <!--<source src="test.mp4" type="video/mp4">-->
+                        </video>
                         <div class="p-links" id="pLinks-{{project.key}}">
                             <a ng-click="newTab(project.githubLink)" ng-hide="project.githubLink.length < 1">github</a>
                             <a ng-click="newTab(project.imageLink)" ng-hide="project.imageLink.length < 1">full image</a>
+                            <a ng-click="newTab(project.videoLink)" ng-hide="project.videoLink.length < 1">video</a>
+
 
                         </div>
                         <div class="p-info" id="pInfo-{{project.key}}">

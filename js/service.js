@@ -13,6 +13,8 @@ angular.module("donSite")
                 key: "karmalounge",
                 githubLink: "",
                 imageLink: "http://i.imgur.com/yUFAOn8.png",
+                video: "video/karmalounge-vid.webm",
+                videoLink: "http://youtu.be/alEgC9ynb6U",
                 desc: "Karma Lounge is real time feed of bets, matches, and trades in GuildWars2 & Twitch. NodeJS was used to read twitch chat API. Firebase for the realtime data syncing with backend servers. Angular used to make this project at SPA (single page application)."
             },
             {
@@ -22,6 +24,8 @@ angular.module("donSite")
                 key: "angularlabs",
                 githubLink: "",
                 imageLink: "http://i.imgur.com/XHm9Rs1.png",
+                video: "",
+                videoLink: "",
                 desc: "With my love for angular I decided to make a logo for my future angular blog? Maybe? Adobe Illustrator used for this design."
 
             },
@@ -32,6 +36,8 @@ angular.module("donSite")
                 key: "sourcebox",
                 githubLink: "",
                 imageLink: "http://i.imgur.com/tjSbD7l.png",
+                video: "",
+                videoLink: "",
                 desc: "This is the logo I created for one of my personal projects, a voice recognition twitch bot (under construction), competitor to NightBot. Adobe Illustrator was used to create this logo."
 
             }

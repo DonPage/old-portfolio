@@ -994,15 +994,15 @@ nav.open {
         border-right: 3.5em $color-darkwhite solid;
         cursor: pointer;
         .p-info {
-
           margin-top: 2.9em;
-          z-index: $zi2;
+          z-index: $zi3;
           position: absolute;
           width: 37%;
           background-color: $color-primary-glass;
           color: $color-darkwhite;
           padding: 10px 5px;
           left: -100%;
+          top: 0;
         }
         .p-links{
           width: 150px;
@@ -1073,6 +1073,13 @@ nav.open {
       }
     }
   }
+}
+#project-video{
+  position: static;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
+  background-size: cover;
+  z-index: $zi1;
 }
 
 @import "_mediaQueries.scss";

@@ -802,13 +802,14 @@ nav.open {
       cursor: pointer; }
       .work-wrapper--inner .right-info .all-project-wrapper .project .p-info {
         margin-top: 2.9em;
-        z-index: 200;
+        z-index: 300;
         position: absolute;
         width: 37%;
         background-color: rgba(39, 39, 55, 0.97);
         color: #f4f4f4;
         padding: 10px 5px;
-        left: -100%; }
+        left: -100%;
+        top: 0; }
       .work-wrapper--inner .right-info .all-project-wrapper .project .p-links {
         width: 150px;
         height: auto;
@@ -871,6 +872,15 @@ nav.open {
         z-index: 400;
         position: absolute;
         color: #272737; }
+
+#project-video {
+  position: static;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  z-index: 100; }
 
 /* CSS using SCSS
         Created By: Don Page on 10/19/14
