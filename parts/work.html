@@ -25,8 +25,8 @@
 
                         </div>
                         <div class="p-links" id="pLinks-{{project.key}}">
-                            <a ng-click="newTab(project.githubLink)">github</a>
-                            <a ng-click="newTab(project.imageLink)">full image</a>
+                            <a ng-click="newTab(project.githubLink)" ng-hide="project.githubLink.length < 1">github</a>
+                            <a ng-click="newTab(project.imageLink)" ng-hide="project.imageLink.length < 1">full image</a>
 
                         </div>
                         <div class="p-info" id="pInfo-{{project.key}}">
