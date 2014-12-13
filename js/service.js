@@ -23,7 +23,7 @@ angular.module("donSite")
                 imageLink: "http://i.imgur.com/XHm9Rs1.png"
             },
             {
-                title: "Sourse Box",
+                title: "Source Box",
                 type: "design",
                 bg: "http://i.imgur.com/tjSbD7l.png",
                 key: "sourcebox",
