@@ -32,7 +32,7 @@ angular.module("donSite")
                 key: "sourcebox",
                 githubLink: "",
                 imageLink: "http://i.imgur.com/tjSbD7l.png",
-                desc: "This is the logo I created for one of my personal projects, a voice recognition twitch bot (under construction). Adobe Illustrator was used to create this logo."
+                desc: "This is the logo I created for one of my personal projects, a voice recognition twitch bot (under construction), competitor to NightBot. Adobe Illustrator was used to create this logo."
 
             }
 
