@@ -58,11 +58,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
             filter = type;
         };
 
-        var currentTabOpen = null;
-
         $scope.openProject = function (k) {
-
-
 
             if($("#"+k).hasClass("isOpen") == true){
                 $("#"+k)
@@ -78,7 +74,6 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
 
                 //this will close previous tabs
                 if($(".project").hasClass("isOpen") == true){
-                    console.log(this.$id);
                     $(".project")
                         .velocity({ height: "5.8em"}, {duration: "normal"})
                         .removeClass("isOpen");
