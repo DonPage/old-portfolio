@@ -58,9 +58,12 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
             filter = type;
         };
 
+        var currentTabOpen = null;
+
         $scope.openProject = function (k) {
-            console.log("openProject", k);
-//            window.location.hash = "/work/"+k;
+
+
+
             if($("#"+k).hasClass("isOpen") == true){
                 $("#"+k)
                     .velocity({ height: "5.8em"}, {duration: "normal"})
@@ -72,6 +75,20 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
                     .velocity({ top: "-20em"}, {duration: "slow"} );
 
             } else {
+
+                //this will close previous tabs
+                if($(".project").hasClass("isOpen") == true){
+                    console.log(this.$id);
+                    $(".project")
+                        .velocity({ height: "5.8em"}, {duration: "normal"})
+                        .removeClass("isOpen");
+                    $(".p-info")
+                        .velocity({ left: "-100%"}, {duration: "slow"} );
+                    $(".p-links")
+                        .velocity({ top: "-20em"}, {duration: "slow"} );
+                }
+                //----------------------------
+
                 $("#"+k)
                     .velocity({ height: "30em" }, {duration: "normal"})
                     .addClass("isOpen");
