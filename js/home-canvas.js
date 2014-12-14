@@ -25,6 +25,7 @@ function init() {
 
     scene = new THREE.Scene();
 
+
     renderer = new THREE.CanvasRenderer();
     renderer.setClearColor( 0xf4f4f4 );
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -49,23 +50,24 @@ function init() {
 //
 //    });
     var material = new THREE.SpriteMaterial({
-        map: new THREE.Texture(generateSprite()),
-        blending: THREE.AdditiveBlending
+//        map: new THREE.Texture(generateSprite()),
+//        blending: THREE.AdditiveBlending
+        color: 0x272737, ambient: 0x3732bf, specular: 0x3732bf, shininess: 250,
+        side: THREE.DoubleSide, vertexColors: THREE.VertexColors
     });
 
 
     var geometry = new THREE.Geometry();
 
-    for (var i = 0; i < 130; i++) {
-
+    for (var i = 0; i < 77; i++) {
 
         particle = new THREE.Sprite(material);
-        particle.position.x = Math.random() * 2 - 1;
+        particle.position.x = Math.random() * 2.5 - 1;
         particle.position.y = Math.random() * 2.5 - 1;
-        particle.position.z = Math.random() * 3 - 1;
+        particle.position.z = Math.random() * 2.5 - 1;
         particle.position.normalize();
-        particle.position.multiplyScalar(Math.random() * 2 + 350);
-        particle.scale.x = particle.scale.y = 4; //dot size
+        particle.position.multiplyScalar(Math.random() * 2 + 200);
+        particle.scale.x = particle.scale.y = 0.4; //dot size
         scene.add(particle);
 
         geometry.vertices.push(particle.position);
@@ -74,7 +76,7 @@ function init() {
 
     // lines
 
-    var line = new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0x272737, opacity: .3}));
+    var line = new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0x272737, opacity: .2}));
     scene.add(line);
 
     document.addEventListener('mousemove', onDocumentMouseMove, false);
@@ -180,7 +182,8 @@ function render() {
     theta += 0.01;
 
     camera.position.x = radius * Math.sin(THREE.Math.degToRad(theta));
-    camera.position.y += ( -mouseY + 50 - camera.position.y ) * .001;
+//    camera.position.y += ( -mouseY + 50 - camera.position.y ) * .001;
+    camera.position.y = radius * Math.cos(THREE.Math.degToRad(theta));
     camera.position.z = radius * Math.cos(THREE.Math.degToRad(theta));
     camera.lookAt(scene.position);
 

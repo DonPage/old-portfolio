@@ -218,9 +218,7 @@ nav {
         border-top: 1px solid #272737;
         border-bottom: none; }
         nav ul li a:hover {
-          color: #b5b5ff;
-          border-top: 1px solid #272737;
-          border-bottom: 1px solid #272737; }
+          color: #b5b5ff; }
 
 nav.open {
   color: rgba(39, 39, 55, 0.22);
