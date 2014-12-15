@@ -179,12 +179,13 @@ function render() {
 
     // rotate camera
 
-    theta += 0.01;
+    theta += 0.03;
 
     camera.position.x = radius * Math.sin(THREE.Math.degToRad(theta));
 //    camera.position.y += ( -mouseY + 50 - camera.position.y ) * .001;
     camera.position.y = radius * Math.cos(THREE.Math.degToRad(theta));
-    camera.position.z = radius * Math.cos(THREE.Math.degToRad(theta));
+//    camera.position.z = radius * Math.cos(THREE.Math.degToRad(theta));
+    camera.position.z = radius * Math.cos(THREE.Math.degToRad(theta)) - 60;
     camera.lookAt(scene.position);
 
 //    camera.position.x += ( mouseX - camera.position.x ) * .001;
