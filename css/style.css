@@ -174,7 +174,7 @@ a {
     margin: 0 auto; }
     .home-wrapper--outer .home-wrapper--inner h1 {
       font-family: "Megrim", "Open Sans" Helvetica, Arial, sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 50px; }
 
 nav {
@@ -189,7 +189,7 @@ nav {
     opacity: .4;
     z-index: 700;
     font-family: "Megrim", "Open Sans" Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     color: #eee;
     font-size: 2.5em;
     line-height: 2;
@@ -211,7 +211,7 @@ nav {
       width: calc(98.9% / 3); }
       nav ul li a {
         font-family: "Megrim", "Open Sans" Helvetica, Arial, sans-serif;
-        font-weight: normal;
+        font-weight: 400;
         color: rgba(255, 255, 255, 0.78);
         font-size: 3em;
         line-height: 1.6;
@@ -741,7 +741,7 @@ nav.open {
     font-weight: 100; }
     #view-page .content-inner article.aboutMe h1 .special-font {
       font-family: "Megrim", "Open Sans" Helvetica, Arial, sans-serif;
-      font-weight: normal; }
+      font-weight: 400; }
   #view-page .content-inner article.aboutMe h2 {
     margin-top: 20px;
     padding-top: 20px;
