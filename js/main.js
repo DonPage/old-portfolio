@@ -1,4 +1,4 @@
-angular.module("donSite", ["ngRoute", "ngSanitize"])
+angular.module("donSite", ["ngRoute", "ngSanitize", "angulartics", "angulartics.google.analytics"])
     .config(function ($routeProvider) {
         $routeProvider
             .when("/", {
@@ -99,7 +99,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
             if (link == "" || link == " "){
                 return;
             }
-            window.open(link, '_blank').focus();
+            window.open(link, "_blank").focus();
         }
     })
 
@@ -150,11 +150,11 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
         $scope.articleImg = article.img;
         $scope.authorInfo = article.author[0];
 
-        $("#back2top").on('click', function(){
-            $('html, body').animate(
+        $("#back2top").on("click", function(){
+            $("html, body").animate(
                 { scrollTop: 0 },
                 { duration: 300,
-                    easing: 'linear'
+                    easing: "linear"
                 }
             )
         });
@@ -162,11 +162,11 @@ angular.module("donSite", ["ngRoute", "ngSanitize"])
     });
 
 //    .filter("blogFilter", function(siteService, $routeParams){
-//        var searchField = document.querySelector('#search-field');
-//        console.log('searchField',searchField.value);
+//        var searchField = document.querySelector("#search-field");
+//        console.log("searchField",searchField.value);
 //        return function (items, name) {
-//            console.log('INPUT',name);
-//            if (name == '' || name == undefined){
+//            console.log("INPUT",name);
+//            if (name == "" || name == undefined){
 //                return siteService.getArticleArray($routeParams.pageNumber);
 //
 //            } else {
