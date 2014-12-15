@@ -285,7 +285,7 @@ angular.module("donSite")
          * Review: #83b1ff
          * Case Study: #DB5643
          * Open Source: #ff6666
-         * Life: #70c989
+         * Blog: #70c989
          */
 
         var articleArray = [
@@ -296,7 +296,7 @@ angular.module("donSite")
                     img: "http://newgrids.fr/wp-content/uploads/2014/02/devart04.png",
                     title: "Inspiration",
                     typeImg: "",
-                    type: "Life",
+                    type: "Blog",
                     typeColor: "#70c989",
                     tags: ["Inspiration", "Blog"],
                     author: [

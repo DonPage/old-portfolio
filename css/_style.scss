@@ -806,6 +806,9 @@ nav.open {
           @include transition(padding .5s cubic-bezier(0.165, 0.84, 0.44, 1));
           padding: 3px 59px;
         }
+        p{
+          line-height: 1.8;
+        }
         pre {
           width: 100%;
           padding: 3px 0 !important;
@@ -824,6 +827,7 @@ nav.open {
         }
 
         .left{
+          padding-right: 18px !important;
           float: left;
         }
 

@@ -639,6 +639,8 @@ nav.open {
           -moz-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
           transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
           padding: 3px 59px; }
+        .article-outer-wrapper .article-inner-wrapper .article-text-block section p {
+          line-height: 1.8; }
         .article-outer-wrapper .article-inner-wrapper .article-text-block section pre {
           width: 100%;
           padding: 3px 0 !important;
@@ -652,6 +654,7 @@ nav.open {
           max-width: 50%;
           margin: 0 auto; }
         .article-outer-wrapper .article-inner-wrapper .article-text-block section .left {
+          padding-right: 18px !important;
           float: left; }
 
 /*
