@@ -89,6 +89,7 @@
           overflow-y: auto;
         }
       }
+
       .article-text-block{
         width: 100%;
         top: -2px;
@@ -134,8 +135,10 @@
     .article-inner-wrapper{
       padding: 18px 0;
       .article-text-block{
-        h1, h2, h3, h4, h5, p, pre {
-          padding: 3px 40px;
+        section{
+          h1, h2, h3, h4, h5, p, pre, img.small-image-wrapper {
+            padding: 3px 40px;
+          }
         }
       }
     }
@@ -182,11 +185,17 @@
     .article-inner-wrapper{
       padding: 18px 0;
       .article-text-block{
-        p, pre {
-          padding: 3px 40px 3px 3.5px;
-        }
-        h1, h2, h3, h4, h5{
-          padding: 3px 40px 3px 10px;
+        section{
+          p, pre, img.small-image-wrapper {
+            padding: 3px 40px 3px 3.5px;
+          }
+          img.small-image-wrapper{
+            width: 100%;
+            float:none;
+          }
+          h1, h2, h3, h4, h5{
+            padding: 3px 40px 3px 10px;
+          }
         }
       }
     }

@@ -778,20 +778,6 @@ nav.open {
       top: -47px;
       padding-bottom: 4em;
 
-      h1, h2, h3, h4, h5, p, pre {
-        @include transition(padding .5s cubic-bezier(0.165, 0.84, 0.44, 1));
-        padding: 3px 59px;
-      }
-      pre {
-        width: 100%;
-        padding: 3px 0 !important;
-        background-color: transparent;
-        &:hover {
-          @include transition(all .5s cubic-bezier(0.165, 0.84, 0.44, 1));
-          background-color: #e5e5e5;
-        }
-      }
-
       .image-wrapper {
         max-width: 100%;
         z-index: $zi4;
@@ -807,6 +793,40 @@ nav.open {
       .date {
         text-align: right;
         padding: 0 8px 0 0;
+      }
+
+      section{
+        @include clearfix();
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 50px 0;
+
+        h1, h2, h3, h4, h5, p, pre, img.small-image-wrapper {
+          @include transition(padding .5s cubic-bezier(0.165, 0.84, 0.44, 1));
+          padding: 3px 59px;
+        }
+        pre {
+          width: 100%;
+          padding: 3px 0 !important;
+          background-color: transparent;
+          &:hover {
+            @include transition(all .5s cubic-bezier(0.165, 0.84, 0.44, 1));
+            background-color: #e5e5e5;
+          }
+        }
+
+        img.small-image-wrapper{
+          max-width: 50%;
+          margin: 0 auto;
+//          padding: 5px;
+
+        }
+
+        .left{
+          float: left;
+        }
+
       }
     }
   }
