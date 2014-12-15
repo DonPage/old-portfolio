@@ -1,4 +1,4 @@
-angular.module("donSite", ["ngRoute", "ngSanitize", "angulartics", "angulartics.google.analytics"])
+angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.google.analytics'])
     .config(function ($routeProvider) {
         $routeProvider
             .when("/", {
