@@ -481,8 +481,7 @@ angular.module("donSite")
             return type;
         };
 
-        //Time left to read the rest of article, BETA lol.
-        //this will be based on the height of the page relative to the bottom. TODO: make a better algorithm later.
+
 
 
     });
