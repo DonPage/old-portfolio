@@ -24,12 +24,6 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
                     return "articles/"+$routeParams.articleID+".html";
                 }
             })
-            .when("/work/:projectID", {
-                controller: "projectController",
-                templateUrl: function($routeParams){
-                    return "projects/"+$routeParams.projectID+".html";
-                }
-            })
             .otherwise({
                 redirectTo: "/"
             })
@@ -103,9 +97,6 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
         }
     })
 
-    .controller("projectController", function($scope, siteService, $routeParams){
-        siteService.openPage();
-    })
 
     .controller("egoController", function ($scope, siteService) {
         siteService.openPage();
