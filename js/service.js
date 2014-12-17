@@ -349,7 +349,6 @@ angular.module("donSite")
 
 
         this.getArticleArray = function (pageNum) {
-            console.log('getArticleArray:', articleArray[pageNum - 1]);
             return articleArray[pageNum - 1]; //-1 because array begins in 0 but page number counts from 1.
         }
 
@@ -358,7 +357,6 @@ angular.module("donSite")
             console.log('populateShadowArray from', articleArray);
             for (var i = 0; i < articleArray.length; i++) { //wemustgodeeper.jpg
                 for (var y = 0; y < articleArray[i].length; y++) {
-                    console.log('pushing', articleArray[i][y]);
                     shadowArticleArray.push(articleArray[i][y]);
                 }
             }
@@ -441,12 +439,10 @@ angular.module("donSite")
         };
 
         this.getArticle = function (id) {
-            console.log('GETTING ARTICLE');
             document.location.hash = "/blog/" + id;
         };
 
         this.getShadowArray = function () {
-            console.log('SHADOW:', shadowArticleArray);
             return shadowArticleArray;
         };
 
@@ -455,7 +451,6 @@ angular.module("donSite")
             for (var i = 0; i < articleArray[page - 1].length; i++) {
                 if (articleArray[page - 1][i].ID == id) {
                     currentArticle = articleArray[page - 1][i];
-                    console.log('FOUND MATCH', articleArray[i]);
                     break; //the break is so the loop doesnt keep running after a match is found.
                 } else {
                     console.log('didn\'t find match')
