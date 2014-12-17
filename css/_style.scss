@@ -46,7 +46,8 @@ $dribble: #CF6DA4;
 /* https://www.google.com/fonts#UsePlace:use/Collection:Megrim */
 @mixin megrim-font {
   font: {
-    family: "Megrim", "Open Sans" Helvetica, Arial, sans-serif;
+    family: "Megrim", "Open Sans", Helvetica, Arial, sans-serif;
+//    family: 'Megrim', 'Open Sans'
     weight: 400;
   }
 }
@@ -54,28 +55,28 @@ $dribble: #CF6DA4;
 /* https://www.google.com/fonts#UsePlace:use/Collection:Roboto */
 @mixin roboto-font-norm {
   font: {
-    family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
     weight: 400; //normal
   }
 }
 
 @mixin roboto-font-thin {
   font: {
-    family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
     weight: 100; //thin
   }
 }
 
 @mixin roboto-font-med {
   font: {
-    family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
     weight: 500; //medium
   }
 }
 
 @mixin roboto-font-bold {
   font: {
-    family: "Roboto", "Open Sans" Helvetica, Arial, sans-serif;
+    family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
     weight: 700; //bold
   }
 }
