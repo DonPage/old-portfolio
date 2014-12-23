@@ -27,7 +27,7 @@ function init() {
 
 
     renderer = new THREE.CanvasRenderer();
-    renderer.setClearColor( 0xf4f4f4 );
+    renderer.setClearColor(0xf4f4f4);
     renderer.setSize(window.innerWidth, window.innerHeight);
     container.appendChild(renderer.domElement);
 
@@ -137,7 +137,6 @@ function generateSprite() {
     gradient.addColorStop(0.2, 'rgba(39, 39, 55, 1)');
     gradient.addColorStop(0.4, 'rgba(0, 0, 55, 1)');
     gradient.addColorStop(1, 'rgba(0,0,0,.5)');
-
 
 
     context.fillStyle = gradient;

@@ -47,7 +47,7 @@ $dribble: #CF6DA4;
 @mixin megrim-font {
   font: {
     family: "Megrim", "Open Sans", Helvetica, Arial, sans-serif;
-//    family: 'Megrim', 'Open Sans'
+    //    family: 'Megrim', 'Open Sans'
     weight: 400;
   }
 }
@@ -796,7 +796,7 @@ nav.open {
         padding: 0 8px 0 0;
       }
 
-      section{
+      section {
         @include clearfix();
         display: block;
         width: 100%;
@@ -807,7 +807,7 @@ nav.open {
           @include transition(padding .5s cubic-bezier(0.165, 0.84, 0.44, 1));
           padding: 3px 59px;
         }
-        p{
+        p {
           line-height: 1.8;
         }
         pre {
@@ -820,14 +820,14 @@ nav.open {
           }
         }
 
-        img.small-image-wrapper{
+        img.small-image-wrapper {
           max-width: 50%;
           margin: 0 auto;
-//          padding: 5px;
+          //          padding: 5px;
 
         }
 
-        .left{
+        .left {
           padding-right: 18px !important;
           float: left;
         }
@@ -1027,7 +1027,7 @@ nav.open {
           left: -100%;
           top: 0;
         }
-        .p-links{
+        .p-links {
           width: 150px;
           height: auto;
           text-align: center;
@@ -1037,7 +1037,7 @@ nav.open {
           z-index: $zi3;
           margin-top: 40px;
           background-color: $color-darkwhite;
-          a{
+          a {
             padding: 15px 10px;
             display: block;
           }
@@ -1097,10 +1097,13 @@ nav.open {
     }
   }
 }
-#project-video{
+
+#project-video {
   position: static;
-  min-width: 100%; min-height: 100%;
-  width: 100%; height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
   background-size: cover;
   z-index: $zi1;
 }

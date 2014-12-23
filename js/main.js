@@ -19,9 +19,9 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
             })
             .when("/blog/:pageNumber/:articleID", {
                 controller: "articleController",
-                templateUrl: function($routeParams){
+                templateUrl: function ($routeParams) {
                     //depending on the articleID ($routeParam), this function will dynamically load the correct html page.
-                    return "articles/"+$routeParams.articleID+".html";
+                    return "articles/" + $routeParams.articleID + ".html";
                 }
             })
             .otherwise({
@@ -33,7 +33,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
         siteService.closePage();
     })
 
-    .controller("workController", function($scope, siteService, $routeParams){
+    .controller("workController", function ($scope, siteService, $routeParams) {
         siteService.openPage();
 
         $scope.projectArray = siteService.getProjects();
@@ -43,7 +43,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
         $scope.activeType = function () {
             return filter;
         };
-        $scope.changeType = function(type){
+        $scope.changeType = function (type) {
 //            $(".all-project-wrapper").velocity("transition.slideRightOut", 500);
 //            $(".all-project-wrapper").velocity("transition.slideRightIn", 500)
 //                .velocity({complete: function(){
@@ -54,43 +54,43 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
 
         $scope.openProject = function (k) {
 
-            if($("#"+k).hasClass("isOpen") == true){
-                $("#"+k)
+            if ($("#" + k).hasClass("isOpen") == true) {
+                $("#" + k)
                     .velocity({ height: "5.8em"}, {duration: "normal"})
                     .removeClass("isOpen");
 
-                $("#pInfo-"+k)
-                    .velocity({ left: "-100%"}, {duration: "slow"} );
-                $("#pLinks-"+k)
-                    .velocity({ top: "-20em"}, {duration: "slow"} );
+                $("#pInfo-" + k)
+                    .velocity({ left: "-100%"}, {duration: "slow"});
+                $("#pLinks-" + k)
+                    .velocity({ top: "-20em"}, {duration: "slow"});
 
             } else {
 
                 //this will close previous tabs
-                if($(".project").hasClass("isOpen") == true){
+                if ($(".project").hasClass("isOpen") == true) {
                     $(".project")
                         .velocity({ height: "5.8em"}, {duration: "normal"})
                         .removeClass("isOpen");
                     $(".p-info")
-                        .velocity({ left: "-100%"}, {duration: "slow"} );
+                        .velocity({ left: "-100%"}, {duration: "slow"});
                     $(".p-links")
-                        .velocity({ top: "-20em"}, {duration: "slow"} );
+                        .velocity({ top: "-20em"}, {duration: "slow"});
                 }
                 //----------------------------
 
-                $("#"+k)
+                $("#" + k)
                     .velocity({ height: "30em" }, {duration: "normal"})
                     .addClass("isOpen");
 
-                $("#pInfo-"+k)
-                    .velocity({ left: "0%"}, {duration: "slow"} );
-                $("#pLinks-"+k)
-                    .velocity({ top: "0%"}, {duration: "slow"} );
+                $("#pInfo-" + k)
+                    .velocity({ left: "0%"}, {duration: "slow"});
+                $("#pLinks-" + k)
+                    .velocity({ top: "0%"}, {duration: "slow"});
             }
         };
 
         $scope.newTab = function (link) {
-            if (link == "" || link == " "){
+            if (link == "" || link == " ") {
                 return;
             }
             window.open(link, "_blank").focus();
@@ -118,13 +118,13 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
         siteService.openPage();
         siteService.populateShadowArray();
 
-        $scope.pageArray  = siteService.getArticlePages();
+        $scope.pageArray = siteService.getArticlePages();
         $scope.articleArray = siteService.getArticleArray($routeParams.pageNumber);
         $scope.pageNum = $routeParams.pageNumber;
         $scope.articleShadowArray = siteService.getShadowArray();
     })
 
-    .controller("articleController", function($scope, siteService, $routeParams) {
+    .controller("articleController", function ($scope, siteService, $routeParams) {
         var currentArticle = null;
         var pageHeight = $(window).height();
 
@@ -141,7 +141,7 @@ angular.module("donSite", ["ngRoute", "ngSanitize", 'angulartics', 'angulartics.
         $scope.articleImg = article.img;
         $scope.authorInfo = article.author[0];
 
-        $("#back2top").on("click", function(){
+        $("#back2top").on("click", function () {
             $("html, body").animate(
                 { scrollTop: 0 },
                 { duration: 300,
