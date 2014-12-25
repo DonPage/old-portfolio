@@ -56,9 +56,9 @@ angular.module("donSite")
                 imageLink: "",
                 video: "",
                 videoLink: "",
-                blogLink: "http://scotch.io/tutorials/google-material-design-input-boxes-in-css3",
+                blogLink: "http://buff.ly/U7fpiI",
                 penLink: "http://codepen.io/DonPage/pen/zhpEt",
-                desc: "With the buzz around Material Design, ScotchIO, did an amazing tutorial on the Input Boxes in CSS3. For my contribution I decided to fork off there codepen example and add in forum validation. Forked version has nearly 1,000 views."
+                desc: "With the buzz around Material/Paper elements, ScotchIO, did an amazing tutorial on the Input Boxes in CSS3. For my contribution I decided to fork off there codepen example and add in forum validation. Forked version has nearly 1,000 views."
 
             }
 
