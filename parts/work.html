@@ -7,6 +7,7 @@
                     <li ng-click="changeType('')">All</li>
                     <li ng-click="changeType('development')">Development</li>
                     <li ng-click="changeType('design')">Design</li>
+                    <li ng-click="changeType('contributions')">Contributions</li>
                 </ul>
             </div>
 
@@ -29,7 +30,9 @@
                             <!--<source src="test.mp4" type="video/mp4">-->
                         </video>
                         <div class="p-links" id="pLinks-{{project.key}}">
+                            <a ng-click="newTab(project.blogLink)" ng-hide="project.blogLink.length < 1">blog link</a>
                             <a ng-click="newTab(project.githubLink)" ng-hide="project.githubLink.length < 1">github</a>
+                            <a ng-click="newTab(project.blogLink)" ng-hide="project.penLink.length < 1">codepen</a>
                             <a ng-click="newTab(project.imageLink)" ng-hide="project.imageLink.length < 1">full image</a>
                             <a ng-click="newTab(project.videoLink)" ng-hide="project.videoLink.length < 1">video</a>
                         </div>

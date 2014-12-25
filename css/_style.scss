@@ -1009,6 +1009,9 @@ nav.open {
     width: 80%;
     background-color: $color-darkwhite;
     .all-project-wrapper {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 100%;
 
       .project {
         -webkit-transform: translate3d(0px, 11px, 0px); //translate3d(0px, 707px, 0px) skewY(1.1deg)

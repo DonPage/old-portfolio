@@ -15,6 +15,8 @@ angular.module("donSite")
                 imageLink: "http://i.imgur.com/yUFAOn8.png",
                 video: "video/karmalounge-vid.webm",
                 videoLink: "http://youtu.be/alEgC9ynb6U",
+                blogLink: "",
+                penLink: "",
                 desc: "Karma Lounge is real time feed of bets, matches, and trades in GuildWars2 & Twitch. NodeJS was used to read twitch chat API. Firebase for the realtime data syncing with backend servers. Angular used to make this project at SPA (single page application)."
             },
             {
@@ -26,6 +28,8 @@ angular.module("donSite")
                 imageLink: "http://i.imgur.com/XHm9Rs1.png",
                 video: "",
                 videoLink: "",
+                blogLink: "",
+                penLink: "",
                 desc: "With my love for angular I decided to make a logo for my future angular blog? Maybe? Adobe Illustrator used for this design."
 
             },
@@ -38,7 +42,23 @@ angular.module("donSite")
                 imageLink: "http://i.imgur.com/tjSbD7l.png",
                 video: "",
                 videoLink: "",
+                blogLink: "",
+                penLink: "",
                 desc: "This is the logo I created for one of my personal projects, a voice recognition twitch bot (under construction), competitor to NightBot. Adobe Illustrator was used to create this logo."
+
+            },
+            {
+                title: "Scotch",
+                type: "contributions",
+                bg: "http://scotch.io/wp-content/themes/thirty/img/scotch-home.jpg",
+                key: "scotchmaterial",
+                githubLink: "",
+                imageLink: "",
+                video: "",
+                videoLink: "",
+                blogLink: "http://scotch.io/tutorials/google-material-design-input-boxes-in-css3",
+                penLink: "http://codepen.io/DonPage/pen/zhpEt",
+                desc: "With the buzz around Material Design, ScotchIO, did an amazing tutorial on the Input Boxes in CSS3. For my contribution I decided to fork off there codepen example and add in forum validation. Forked version has nearly 1,000 views."
 
             }
 
