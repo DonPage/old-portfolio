@@ -651,11 +651,11 @@ nav.open {
             transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
             background-color: #e5e5e5; }
         .article-outer-wrapper .article-inner-wrapper .article-text-block section img.small-image-wrapper {
-          max-width: 50%;
-          margin: 0 auto; }
-        .article-outer-wrapper .article-inner-wrapper .article-text-block section .left {
-          padding-right: 18px !important;
-          float: left; }
+          max-width: 74%;
+          margin: 0 auto;
+          display: flex; }
+        .article-outer-wrapper .article-inner-wrapper .article-text-block section .center {
+          text-align: center; }
 
 /*
  * Back2Top
@@ -977,13 +977,14 @@ nav.open {
 @media only screen and (max-width: 500px) {
   .article-outer-wrapper .article-inner-wrapper {
     padding: 18px 0; }
-    .article-outer-wrapper .article-inner-wrapper .article-text-block section p, .article-outer-wrapper .article-inner-wrapper .article-text-block section pre, .article-outer-wrapper .article-inner-wrapper .article-text-block section img.small-image-wrapper {
-      padding: 3px 40px 3px 3.5px; }
-    .article-outer-wrapper .article-inner-wrapper .article-text-block section img.small-image-wrapper {
-      width: 100%;
-      float: none; }
-    .article-outer-wrapper .article-inner-wrapper .article-text-block section h1, .article-outer-wrapper .article-inner-wrapper .article-text-block section h2, .article-outer-wrapper .article-inner-wrapper .article-text-block section h3, .article-outer-wrapper .article-inner-wrapper .article-text-block section h4, .article-outer-wrapper .article-inner-wrapper .article-text-block section h5 {
-      padding: 3px 40px 3px 10px; }
+    .article-outer-wrapper .article-inner-wrapper .article-text-block section {
+      overflow-x: hidden; }
+      .article-outer-wrapper .article-inner-wrapper .article-text-block section p, .article-outer-wrapper .article-inner-wrapper .article-text-block section pre, .article-outer-wrapper .article-inner-wrapper .article-text-block section img.small-image-wrapper {
+        padding: 3px 1px 3px 1px; }
+      .article-outer-wrapper .article-inner-wrapper .article-text-block section img.small-image-wrapper {
+        max-width: 100%; }
+      .article-outer-wrapper .article-inner-wrapper .article-text-block section h1, .article-outer-wrapper .article-inner-wrapper .article-text-block section h2, .article-outer-wrapper .article-inner-wrapper .article-text-block section h3, .article-outer-wrapper .article-inner-wrapper .article-text-block section h4, .article-outer-wrapper .article-inner-wrapper .article-text-block section h5 {
+        padding: 3px 40px 3px 10px; }
 
   #back2top {
     right: 0; }

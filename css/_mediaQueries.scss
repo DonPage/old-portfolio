@@ -185,12 +185,13 @@
       padding: 18px 0;
       .article-text-block {
         section {
+          overflow-x: hidden;
           p, pre, img.small-image-wrapper {
-            padding: 3px 40px 3px 3.5px;
+            padding: 3px 1px 3px 1px;
           }
           img.small-image-wrapper {
-            width: 100%;
-            float: none;
+            max-width: 100%;
+//            float: none;
           }
           h1, h2, h3, h4, h5 {
             padding: 3px 40px 3px 10px;

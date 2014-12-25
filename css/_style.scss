@@ -821,16 +821,21 @@ nav.open {
         }
 
         img.small-image-wrapper {
-          max-width: 50%;
+          max-width: 74%;
           margin: 0 auto;
+          display: flex;
+
           //          padding: 5px;
 
         }
-
-        .left {
-          padding-right: 18px !important;
-          float: left;
+        .center{
+          text-align: center;
         }
+
+//        .left {
+//          padding-right: 18px !important;
+////          float: left;
+//        }
 
       }
     }
