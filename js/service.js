@@ -370,11 +370,10 @@ angular.module("donSite")
 
         this.getArticleArray = function (pageNum) {
             return articleArray[pageNum - 1]; //-1 because array begins in 0 but page number counts from 1.
-        }
+        };
 
-        this.populateShadowArray = function () {
+        this.populateShadowArray = function () { //shadow array only displays when user is searching. It runs and gets all blog post from all pages
             shadowArticleArray = []; //future me will redo the logic that fills up the shadow array so it only happens once.
-            console.log('populateShadowArray from', articleArray);
             for (var i = 0; i < articleArray.length; i++) { //wemustgodeeper.jpg
                 for (var y = 0; y < articleArray[i].length; y++) {
                     shadowArticleArray.push(articleArray[i][y]);
