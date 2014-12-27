@@ -313,7 +313,7 @@ angular.module("donSite")
             [
                 {
                     ID: "inspiration",
-                    img: "http://newgrids.fr/wp-content/uploads/2014/02/devart04.png",
+                    img: "images/devart.png",
                     title: "Inspiration",
                     typeImg: "",
                     type: "Blog",
