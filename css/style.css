@@ -394,10 +394,9 @@ nav.open {
       cursor: pointer;
       border-bottom: none;
       -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
+      -moz-transform-style: flat;
       -ms-transform-style: preserve-3d;
       -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
