@@ -177,6 +177,16 @@
     }
   }
 
+  .work-wrapper--inner{
+    .left-info{
+      display: none;
+      width: 0%;
+    }
+    .right-info{
+      width: 100%;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -216,15 +226,7 @@
 
 
 
-  .work-wrapper--inner{
-    .left-info{
-      display: none;
-      width: 0%;
-    }
-    .right-info{
-      width: 100%;
-    }
-  }
+
 }
 
 
