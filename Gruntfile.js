@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-ng-annotate');
 
+
     grunt.initConfig({
 
         ngAnnotate: {
@@ -54,6 +55,8 @@ module.exports = function (grunt) {
     grunt.registerTask('ugly', ['uglify']);
 
     grunt.registerTask('ngAnn', ['ngAnnotate']);
+
+    grunt.registerTask('watchAll', ['watch']);
 
 
 };
