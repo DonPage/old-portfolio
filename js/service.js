@@ -17,7 +17,7 @@ angular.module("donSite")
                 videoLink: "http://youtu.be/alEgC9ynb6U",
                 blogLink: "",
                 penLink: "",
-                desc: "Karma Lounge is real time feed of bets, matches, and trades in GuildWars2 & Twitch. NodeJS was used to read twitch chat API. Firebase for the realtime data syncing with backend servers. Angular used to make this project at SPA (single page application)."
+                desc: "Karma Lounge is real time feed of bets, matches, and trades in GuildWars2 & Twitch. NodeJS was used to read twitch chat (IRC). Firebase for the realtime data syncing with backend servers. Angular used to make this project at SPA (single page application)."
             },
             {
                 title: "Angular Labs",
